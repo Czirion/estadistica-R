@@ -266,6 +266,11 @@ Los tipos de caja son los siguientes:
 > > > 
 > > > Este es un ejercicio.
 > > > 
+> > > ~~~
+> > > ls
+> > > ~~~
+> > > {: .language-bash}
+> > > 
 > > > > ## Solución
 > > > > 
 > > > > Esta es la solución.
