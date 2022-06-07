@@ -281,6 +281,24 @@ Los tipos de caja son los siguientes:
 > {: .solution}
 {: .challenge}
 
+Así queda la caja de ejercicio hecha con el código que se ve en la solución anterior:
+
+> ## Ejercicio 1: Título del ejercicio
+> 
+> Este es un ejercicio.
+> 
+> ~~~
+> ls
+> ~~~
+> {: .language-bash}
+> 
+> > ## Solución
+> > 
+> > Esta es la solución.
+> {: .solution}
+{: .challenge}
+
+
 ## Diseñar ejercicios
 
 Los ejercicios de una lección deben mezclar ejercicios de **aplicación directa** (implementación
