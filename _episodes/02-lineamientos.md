@@ -179,13 +179,13 @@ Para una caja de *Output* utiliza: `{: .output}`
 Para una caja de *Error* utiliza: `{: .error}`  
 Para que tenga el formato de sintaxis de algún lenguage de programación y el nombre del lenguage
 en la cajita usa el nombre del lenguage así:  
-  `{: .laguage-html}`  
-  `{: .laguage-bash}`  
-  `{: .laguage-make}`  
-  `{: .laguage-matlab}`  
-  `{: .laguage-python}`  
-  `{: .laguage-r}`  
-  `{: .laguage-sql}`  
+  `{: .language-html}`  
+  `{: .language-bash}`  
+  `{: .language-make}`  
+  `{: .language-matlab}`  
+  `{: .language-python}`  
+  `{: .language-r}`  
+  `{: .language-sql}`  
   
 ## Formato para las cajas especiales
 
