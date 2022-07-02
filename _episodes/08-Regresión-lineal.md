@@ -33,5 +33,5 @@ A partir de esta muestra, se obtienen estimaciones para los tres parámetros del
 
 > ## Notación
 >
-> $ e_{i} = y\_{i} - \hat{y}\_{i} $ es el i-ésimo residual, siendo $ \hat{y}\_{i} = hat{\beta}\_{0} + hat{\beta}\_{1} x_{i} $
+> $ e_{i} = y\_{i} - \hat{y}\_{i} $ es el i-ésimo residual, siendo $ \hat{y}\_{i} = \hat{\beta}\_{0} + \hat{\beta}\_{1} x_{i} $
 {: .prereq}  
