@@ -19,8 +19,8 @@ en donde $ \beta_{0} $ y $ \beta_{1} $ son dos parámetros del modelo, $ x $ es 
 
 $$ \epsilon \sim Normal(0, \sigma^{2}) $$
 
-Aquí, \sigma^{2} es el tercer parámetro del modelo. Suponga que tenemos _n_ pares de datos
+Aquí, $ \sigma^{2} $ es el tercer parámetro del modelo. Suponga que tenemos _n_ pares de datos
 
 $$ (x_{1}, Y_{1}), (x_{2}, Y_{2}), \cdots, (x_{n}, Y_{n}) $$
 
-A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta_{0}},  $
+A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta}_{0},  $
