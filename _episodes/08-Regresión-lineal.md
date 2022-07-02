@@ -12,4 +12,5 @@ keypoints:
 
 ## Comandos básicos
 Considere una variable $ Y $ de la forma
-$$ Y = \Beta_{0} + \Beta_{1} + \epsilon $$ 
+
+$$ Y = \beta_{0} + \beta_{1} + \epsilon $$ 
