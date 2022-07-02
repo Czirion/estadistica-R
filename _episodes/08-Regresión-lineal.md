@@ -38,5 +38,4 @@ A partir de esta muestra, se obtienen estimaciones para los tres parámetros del
 > $ SCE = \sum\limits_{i=1}^{n} (y_{i} - \hat{y}\_{i})^{2} $ Es la suma de los cuadrados del error
 {: .prereq}  
 
-1. $ \hat{\beta}\_{0} = \bar{y} - \hat{\beta}\_{1} \bar{x} $    y    $\hat{\beta}\_{1} = \frac{S_{xy}}{S_{xx}} $ 
-en donde    $ S_{xy} = \sum\limits_{i=1}{n} (x_{i} - \bar{x}) (y_{i} - \bar{y}) $
+1. $ \hat{\beta}\_{0} = \bar{y} - \hat{\beta}\_{1} \bar{x} $ &nbsp; y &nbsp; $\hat{\beta}\_{1} = \frac{S_{xy}}{S_{xx}} $ &nbsp; en donde  &nbsp;  $ S_{xy} = \sum\limits_{i=1}{n} (x_{i} - \bar{x}) (y_{i} - \bar{y}) $
