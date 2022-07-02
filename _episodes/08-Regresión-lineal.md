@@ -24,3 +24,7 @@ Aquí, $ \sigma^{2} $ es el tercer parámetro del modelo. Suponga que tenemos _n
 $$ (x_{1}, Y_{1}), (x_{2}, Y_{2}), \cdots, (x_{n}, Y_{n}) $$
 
 A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta}_{0},  $
+
+## Ejemplo de aplicación del modelo
+
+![Forking Repositories]({{ page.root }}/fig/ejemplo_regresion_lineal.jpg)
