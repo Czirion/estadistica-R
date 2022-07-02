@@ -13,17 +13,17 @@ keypoints:
 ## Regresión Lineal Simple
 Considere una variable $ Y $ de la forma
 
-$$ Y = \beta_{0} + \beta_{1} + \epsilon $$ 
+$$ Y = \beta\_{0} + \beta\_{1} x + \epsilon $$ 
 
-en donde $ \beta_{0} $ y $ \beta_{1} $ son dos parámetros del modelo, $ x $ es una variable no aleatoria y
+en donde $ \beta\_{0} $ y $ \beta\_{1} $ son dos parámetros del modelo, $ x $ es una variable no aleatoria y
 
-$$ \epsilon \sim Normal(0, \sigma^{2}) $$
+$$ \epsilon \sim Normal(0, \sigma\^{2}) $$
 
 Aquí, $ \sigma^{2} $ es el tercer parámetro del modelo. Suponga que tenemos _n_ pares de datos
 
-$$ (x_{1}, Y_{1}), (x_{2}, Y_{2}), \cdots, (x_{n}, Y_{n}) $$
+$$ (x\_{1}, Y\_{1}), (x\_{2}, Y\_{2}), \cdots, (x\_{n}, Y\_{n}) $$
 
-A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta}\_{0} $,$ \hat{\beta}\_{1} $y$ \hat{sigma}^{2} $
+A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta}\_{0} $,$ \hat{\beta}\_{1} $y$ \hat{\sigma}\^{2} $
 
 ## Ejemplo de aplicación del modelo
 
