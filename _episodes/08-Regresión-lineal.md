@@ -14,3 +14,7 @@ keypoints:
 Considere una variable $ Y $ de la forma
 
 $$ Y = \beta_{0} + \beta_{1} + \epsilon $$ 
+
+en donde $ \beta_{0} $ y $ \beta_{1} $ son dos parámetros del modelo, $ x $ es una variable no aleatoria $ y $.
+
+$$ \epsilon ~ Normal(0, \sigma^{2}) $$
