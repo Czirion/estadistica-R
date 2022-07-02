@@ -34,5 +34,6 @@ A partir de esta muestra, se obtienen estimaciones para los tres parámetros del
 > ## Notación
 >
 > $ e_{i} = y\_{i} - \hat{y}\_{i} $ es el i-ésimo residual, siendo $ \hat{y}\_{i} = \hat{\beta}\_{0} + \hat{\beta}\_{1} x_{i} $
+> 
 > $ SCE = \sum_{i=1}^{n} (y_{i} - \hat{y}\_{i})^{2} $ Es la suma de los cuadrados del error
 {: .prereq}  
