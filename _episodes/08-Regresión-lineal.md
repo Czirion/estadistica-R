@@ -23,8 +23,15 @@ Aquí, $ \sigma^{2} $ es el tercer parámetro del modelo. Suponga que tenemos _n
 
 $$ (x_{1}, Y_{1}), (x_{2}, Y_{2}), \cdots, (x_{n}, Y_{n}) $$
 
-A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta}\_{0} $,$ \hat{\beta}\_{1} $y$ \hat{\sigma}^{2} $
+A partir de esta muestra, se obtienen estimaciones para los tres parámetros del modelo $ \hat{\beta}\_{0} $, $ \hat{\beta}\_{1} $ y $ \hat{\sigma}^{2} $
 
 ## Ejemplo de aplicación del modelo
 
 ![Forking Repositories]({{ page.root }}/fig/ejemplo_regresion_lineal.jpg)
+
+## Propiedades de los estimadores del modelo
+
+> ## Notación
+>
+> $ e_{i} = y\_{i} - \hat{y}\_{i} $ es el i-ésimo residual, siendo $ \hat{y}\_{i} = hat{\beta}\_{0} + hat{\beta}\_{1} x_{i} $
+{: .prereq}  
