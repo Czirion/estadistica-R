@@ -40,4 +40,4 @@ A partir de esta muestra, se obtienen estimaciones para los tres parámetros del
 
 1. &nbsp;&nbsp;&nbsp; $ \hat{\beta}\_{0} = \bar{y} - \hat{\beta}\_{1} \bar{x} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\beta}\_{1} = \frac{S_{xy}}{S_{xx}} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en donde &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ S_{xy} = \sum\limits_{i=1}^{n} (x_{i} - \bar{x}) (y_{i} - \bar{y}) $
 2. &nbsp;&nbsp;&nbsp; $ E(\hat{\beta}\_{0}) = \beta_{0} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ E(\hat{\beta}\_{1}) = \beta_{1} $
-3. &nbsp;&nbsp;&nbsp; $ var(\hat{\beta}\_{1}) = frac{\sigma^{2}}{S_{xx}} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ var(\hat{\beta}\_{0}) = (\frac{1}{n} + \frac{\bar{x}^{2}}{S_{xx}}) \sigma^{2} $
+3. &nbsp;&nbsp;&nbsp; $ var(\hat{\beta}\_{1}) = \frac{\sigma^{2}}{S_{xx}} $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ var(\hat{\beta}\_{0}) = (\frac{1}{n} + \frac{\bar{x}^{2}}{S_{xx}}) \sigma^{2} $
