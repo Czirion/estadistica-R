@@ -45,4 +45,4 @@ A partir de esta muestra, se obtienen estimaciones para los tres parámetros del
 5. &nbsp;&nbsp;&nbsp; $ \sum\limits_{i = 1}^{n} (\frac{e_{i}}{\sigma})^{2} \sim Ji^{2}(n-2) $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ \hat{\sigma}^{2} = \frac{SCE}{n-2} =: $ CME es insesgado <br> <br>
 
 ## Las distribuciones de la teoría estadística
-$$ Z = \frac{1}{\sqrt{var(x)} \sum\limits{i = 1}^{n} (X_{i} - \micro) $$
+$$ Z = \frac{1}{\sqrt{var(x)} \sum\limits{i = 1}^{n} (X_{i} - \mu) $$
