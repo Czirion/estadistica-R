@@ -50,6 +50,6 @@ $$ Z = \frac{1}{\sqrt{var(x)}} \sum\limits_{i = 1}^{n} (X_{i} - \mu) $$
 
 $$ Ji^{2}(k) = \sum\limits_{i = 1}^{k} Z_{i}^{2} $$
 
-$$ T(k) = \frac{Z}{sqrt{Ji^{2} (k) / k}} $$
+$$ T(k) = \frac{Z}{\sqrt{Ji^{2} (k) / k}} $$
 
 $$ F(k, r) = \frac{Ji^{2}(k)/k}{Ji^{2}(r)/r} $$
