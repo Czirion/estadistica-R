@@ -53,3 +53,7 @@ $$ Ji^{2}(k) = \sum\limits_{i = 1}^{k} Z_{i}^{2} $$
 $$ T(k) = \frac{Z}{\sqrt{Ji^{2} (k) / k}} $$
 
 $$ F(k, r) = \frac{Ji^{2}(k)/k}{Ji^{2}(r)/r} $$
+
+## Francis Galton
+
+Francis Galton (1822-1911) fue un polímata, antropólogo, geógrafo, explorador, inventor, meteorólogo, estadístico, psicólogo y eugenista británico. Creó el concepto estadístico de correlación y regresión hacia la media, altamente promovido. El fue el primero en aplicar métodos estadísticos para el estudio de las diferencias humanas y la herencia de la inteligencia, introdujo el uso de cuestionarios y encuestas para recoger datos sobre las comunidades humanas.
