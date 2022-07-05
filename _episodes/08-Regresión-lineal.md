@@ -46,13 +46,13 @@ A partir de esta muestra, se obtienen estimaciones para los tres parámetros del
 
 ## Las distribuciones de la teoría estadística
 
-$$ Z = \frac{1}{\sqrt{var(x)}} \sum\limits_{i = 1}^{n} (X_{i} - \mu) $$ (Teorema del límite central)
+$$ Z = \frac{1}{\sqrt{var(x)}} \sum\limits_{i = 1}^{n} (X_{i} - \mu) $$ &nbsp;&nbsp;&nbsp; (Teorema del límite central)
 
-$$ Ji^{2}(k) = \sum\limits_{i = 1}^{k} Z_{i}^{2} $$ (Suma de cuadrados normales estándar)
+$$ Ji^{2}(k) = \sum\limits_{i = 1}^{k} Z_{i}^{2} $$ &nbsp;&nbsp;&nbsp; (Suma de cuadrados normales estándar)
 
-$$ T(k) = \frac{Z}{\sqrt{Ji^{2} (k) / k}} $$ (Estandarización usando $\hat{\sigma}$ en lugar de $\sigma$
+$$ T(k) = \frac{Z}{\sqrt{Ji^{2} (k) / k}} $$ &nbsp;&nbsp;&nbsp; (Estandarización usando $\hat{\sigma}$ en lugar de $\sigma$)
 
-$$ F(k, r) = \frac{Ji^{2}(k)/k}{Ji^{2}(r)/r} $$ (Cociente de Ji cuadradas)
+$$ F(k, r) = \frac{Ji^{2}(k)/k}{Ji^{2}(r)/r} $$ &nbsp;&nbsp;&nbsp; (Cociente de Ji cuadradas)
 
 ## Francis Galton
 
