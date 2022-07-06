@@ -514,3 +514,31 @@ La siguiente instrucción sirve para calcular la probabilidad de que una variabl
 ~~~
 {: .output}
 
+***Nota:*** R reconoce a `dbinom` como a una función de densidad, aún cuando en sentido estricto se trata de una función de distribución de masa.
+
+Con la siguiente instrucción se calcula la probabilidad de que X ∼ Binomial(10, 5) sea menor o igual a 7.
+~~~
+    > pbinom(7, size=10, prob=0.5)
+~~~
+{: .language-r}
+
+Da como resultado:
+~~~
+    [1] 0.9453125
+~~~
+{: .output}
+
+Para calcular los cuantiles:
+~~~
+    > qnorm(0.99, mean = 0, sd = 1)
+~~~
+{: .language-r}
+
+Dando como resultado:
+~~~
+    [1] 2.326348
+~~~
+{: .output}
+
+Se puede obtener más información sobre las distribuciones de probabilidad en el contexto de R con las funciones de ayuda:
+`?Normal`, `?Binomial`, `?TDist`, `?Chi-squared`, etcétera. Se sale de la p ́agina de ayuda con `q`.
