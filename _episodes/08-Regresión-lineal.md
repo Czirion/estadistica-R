@@ -80,4 +80,6 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 ~~~
 {: .output}
 
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png)
+
 
