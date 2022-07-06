@@ -373,21 +373,21 @@ Sirve para definir el tamaño de los caracteres de las gráficas. `xlab` y `ylab
 `text` sirve para a ̃nadir texto a la gráfica.
 
 ~~~
-    >text(4, 20, “(4, 16)”)
+    >text(4, 20, "(4, 16)")
 ~~~
 {: .language-r}
 
 `mtext` añade texto en los márgenes.
 
 ~~~
-    >mtext(“aquı ”, side=4)
+    > mtext("aqui", side=4)
 ~~~
 {: .language-r}
 
 `type` especifica el tipo de gráfica.
 
 ~~~
-    >plot(x, y, type = “b”)
+    > plot(x, y, type = "b")
 ~~~
 {: .language-r}
 
@@ -402,3 +402,25 @@ La gráfica puede ser de uno de los tipos que se especifican en la siguiente tab
 |  `s` o `S`  |  Dos tipos de función escalón. |
 | `h` |  Tipo histograma. |
 | `n` |  Ni puntos ni líneas. |
+
+### Ejemplos Adicionales
+~~~
+    > plot(x, y, pch=21, lwd=2, col="red", bg="blue")
+~~~
+{: .language-r}
+
+~~~
+    > plot(x, y, pch=c("a", "b"), col=c("red", "blue"))
+~~~
+{: .language-r}
+
+~~~
+    > par(cex.lab=2, cex.main=2)
+~~~
+{: .language-r}
+
+Tamaño de las leyendas en los ejes y título
+~~~
+    > > plot(x, y, pch=c("a", "b"), col=c("red", "blue"), +main="cuadrado")
+~~~
+{: .language-r}
