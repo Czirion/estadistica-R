@@ -57,3 +57,9 @@ $$ F(k, r) = \frac{Ji^{2}(k)/k}{Ji^{2}(r)/r} $$ &nbsp;&nbsp;&nbsp; (Cociente de 
 ## Francis Galton
 
 Francis Galton (1822-1911) fue un polímata, antropólogo, geógrafo, explorador, inventor, meteorólogo, estadístico, psicólogo y eugenista británico. Creó el concepto estadístico de correlación y regresión hacia la media, altamente promovido. El fue el primero en aplicar métodos estadísticos para el estudio de las diferencias humanas y la herencia de la inteligencia, introdujo el uso de cuestionarios y encuestas para recoger datos sobre las comunidades humanas.
+
+## Regresión hacia la media
+
+En estadística, la regresión hacia la media es el fenómeno en el que si una variable es extrema en su primera medición, tenderá a estar más cerca de la media en su segunda medición y, paradójicamente, si es extrema en su segunda medición, tenderá a haber estado más cerca de la media en su primera. 
+
+
