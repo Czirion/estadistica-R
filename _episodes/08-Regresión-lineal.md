@@ -82,5 +82,5 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 
 > ## Ejercicio `.challenge`
 > Consider the pangenome formed by the following genomes
-> ![Forking Repositories]({{ page.root }}/fig/equation.png)
+> ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png)
 {: .challenge}
