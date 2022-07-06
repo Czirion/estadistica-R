@@ -20,7 +20,7 @@ Para interrumpir un cálculo extenso, oprimir `Esc`.
 Para salir de R:
 
 ~~~
-    > q() #para salir de R
+    > q()
 ~~~
 {: .language-r}
 
@@ -260,7 +260,7 @@ Da como resultado:
 ~~~
 {: .output}
 
-### Gráficas
+## Gráficas
 
 Especifica las dimensiones de una gráfica
 
@@ -280,7 +280,7 @@ Especifica el tamano de los carácteres de la grafica:
  
 ~~~
     >x<-1:10
-    >y<-x ˆ 2
+    >y<-x^2
     >plot(x, y)
 ~~~
 {: .language-r}
@@ -290,7 +290,7 @@ Especifica el tamano de los carácteres de la grafica:
 La gráfica anterior se puede imprimir en un archivo pdf mediante las siguientes instrucciones:
 
 ~~~
-    >pdf(“rplot.pdf ”, width=6, height=5)
+    >pdf("rplot.pdf", width=6, height=5)
     >par(cex=1.5)
     >plot(x, y)
     >dev.off()
@@ -307,15 +307,15 @@ Las funciones para graficar en R tienen varios parámetros. El comando `par` sir
 Sirve para definir el tamaño de los caracteres de las gráficas. `xlab` y `ylab` sirven para especificar las leyendas de los ejes horizontal y vertical.
 
 ~~~
-    >plot(x, y, xlab=“equis”, ylab=“cuadrado”)
+    >plot(x, y, xlab="equis", ylab="cuadrado")
 ~~~
 {: .language-r}
 
 `col` y `bg` cambian el color de la gráfica y el color del fondo de la gráfica.
 
 ~~~
-    >par(bg=“yellow”)
-    >plot(x, y, col=“red”)
+    >par(bg="yellow")
+    >plot(x, y, col="red")
 ~~~
 {: .language-r}
 
@@ -359,7 +359,7 @@ Sirve para definir el tamaño de los caracteres de las gráficas. `xlab` y `ylab
 `fg` especifica el color del marco de la gráfica.
 
 ~~~
-    >plot(x, y, fg=“blue”)
+    >plot(x, y, fg="blue")
 ~~~
 {: .language-r}
 
@@ -421,6 +421,27 @@ La gráfica puede ser de uno de los tipos que se especifican en la siguiente tab
 
 Tamaño de las leyendas en los ejes y título
 ~~~
-    > > plot(x, y, pch=c("a", "b"), col=c("red", "blue"), +main="cuadrado")
+    > plot(x, y, pch=c("a", "b"), col=c("red", "blue"), +main="cuadrado")
 ~~~
 {: .language-r}
+
+## Generación de Números Aleatorios
+Se inicializa el generador de números aleatorios
+~~~
+    > set.seed(777)
+~~~
+{: .language-r}
+
+Si el generador de números aleatorios se inicia con un mismo valor cada vez que se corra el comando, entonces la sucesión de números aleatorios permanecerá sin cambiar.
+~~~
+    > runif(5)
+~~~
+{: .language-r}
+
+Da como resultado:
+~~~
+    > [1] 0.6878574 0.4921926 0.3451156 0.9950499 0.6952672
+~~~
+{: .output}
+
+
