@@ -62,4 +62,22 @@ Francis Galton (1822-1911) fue un polímata, antropólogo, geógrafo, explorador
 
 En estadística, la regresión hacia la media es el fenómeno en el que si una variable es extrema en su primera medición, tenderá a estar más cerca de la media en su segunda medición y, paradójicamente, si es extrema en su segunda medición, tenderá a haber estado más cerca de la media en su primera. 
 
+## Regresión lineal simple: diagrama
+
+~~~
+>recta <- function(x) 1 + 5*x  #Defina una función lineal "recta(x)"
+>set.seed(415)
+>x <- c(1:10)
+>y <- recta(x) + rnorm(10, 0, 5)
+>dev.new(width=6, height=5)
+>par(cex=1.5)
+>plot(x, y)  #Para obtener el diagrama de dispresión
+~~~
+{: .language-r}
+
+~~~
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.jpg)
+~~~
+{: .output}
+
 
