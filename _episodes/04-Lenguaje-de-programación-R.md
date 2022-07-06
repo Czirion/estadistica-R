@@ -542,3 +542,11 @@ Dando como resultado:
 
 Se puede obtener más información sobre las distribuciones de probabilidad en el contexto de R con las funciones de ayuda:
 `?Normal`, `?Binomial`, `?TDist`, `?Chi-squared`, etcétera. Se sale de la página de ayuda con `q`.
+
+El archivo `Histograma.Normal.r` contiene los comandos necesarios para generar la siguiente figura.
+
+<img src="https://raw.githubusercontent.com/Czirion/estadistica-R/gh-pages/fig/Histograma1.png">
+
+En particular, el comando `hist(x)` genera el histograma de los datosn en el vector x.
+
+
