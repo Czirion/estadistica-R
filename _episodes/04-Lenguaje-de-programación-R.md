@@ -471,3 +471,12 @@ R maneja distintos tipos de variables aleatorias. En la siguiente tabla se repor
 |-------------------|-----------------------|-------------------------|
 |         F         |           `f`         |      `df1`, `df2`       |
 |-------------------|-----------------------|-------------------------|
+
+Los nombres de las variables aleatorias se usan en conjunto con una raíz que indica la función a ejecutar.
+
+| Nombre   | Significado |
+| ------- | ----------- |
+| `dnorm` | Función de densidad normal |
+| `pnorm` | Función de distribución normal |
+| `qnorm` | Cuantiles de la distribución normal  |
+| `rnorm` | Números aleatorios normales |
