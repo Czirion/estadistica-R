@@ -543,10 +543,25 @@ Dando como resultado:
 Se puede obtener más información sobre las distribuciones de probabilidad en el contexto de R con las funciones de ayuda:
 `?Normal`, `?Binomial`, `?TDist`, `?Chi-squared`, etcétera. Se sale de la página de ayuda con `q`.
 
+## Construcción de un Histograma
+
 El archivo `Histograma.Normal.r` contiene los comandos necesarios para generar la siguiente figura.
 
 <img src="https://raw.githubusercontent.com/Czirion/estadistica-R/gh-pages/fig/Histograma1.png">
 
 En particular, el comando `hist(x)` genera el histograma de los datosn en el vector x.
+~~~
+   dev.new(width=6, height=5)
+   par(cex=1.5)
+   y <- rnorm(1500, 0, 10)
+   hist(y, breaks=50, col="yellow", freq=FALSE)
+   x <- seq(from=-40, to=40, by=1)
+   w <- dnorm(x, mean=0, sd=10)
+   lines(x, w, lwd=3, col="red")
+~~~
+{: .language-r}
 
+## Ley de los Grandes Números
+En el histograma anterior, el tamaño de la muestra fue de 1500.
+Por la ley de los grandes n ́umeros, cuando el tama ̃no de la muestra se incrementa, entonces el histograma tiende a coincidir con más exactitud con la función de densidad de la que se tomó la muestra.
 
