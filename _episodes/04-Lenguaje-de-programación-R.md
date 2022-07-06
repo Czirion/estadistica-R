@@ -41,7 +41,7 @@ Da la lista de las variables, u objetos, definidos por el usuario:
 Elimina la variable x:
 
 ~~~
-    > rm(“x”) 
+    > rm("x") 
 ~~~
 {: .language-r}
 
@@ -344,7 +344,7 @@ Sirve para definir el tamaño de los caracteres de las gráficas. `xlab` y `ylab
 `main` es el título de la gráfica.
 
 ~~~
-    >plot(x, y, main=“hola”)
+    >plot(x, y, main="hola")
 ~~~
 {: .language-r}
 
@@ -444,4 +444,4 @@ Da como resultado:
 ~~~
 {: .output}
 
-
+R maneja distintos tipos de variables aleatorias. En la siguiente tabla se reportan los nombres de algunas de las variables aleatorias de uso común.
