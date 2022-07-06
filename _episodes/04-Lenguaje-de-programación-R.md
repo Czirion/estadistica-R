@@ -480,3 +480,37 @@ Los nombres de las variables aleatorias se usan en conjunto con una raíz que in
 | `pnorm` | Función de distribución normal |
 | `qnorm` | Cuantiles de la distribución normal  |
 | `rnorm` | Números aleatorios normales |
+
+~~~
+    > rnorm(5, 1, 0.01)
+~~~
+{: .language-r}
+
+Da como resultado:
+~~~
+    [1] 0.9979378 0.9962103 0.9969574 1.0005416 0.9811907
+~~~
+{: .output}
+
+~~~
+    > rbinom(5, size=10, prob=0.5)
+~~~
+{: .language-r}
+ 
+Da como resultado:
+~~~
+    [1] 5 5 9 6 7
+~~~
+{: .output}
+
+La siguiente instrucción sirve para calcular la probabilidad de que una variable aleatoria X ∼ Binomial(10, 5) sea igual a 7.
+~~~
+    > dbinom(7, size=10, prob=0.5)
+~~~
+{: .language-r}
+
+~~~
+    [1] 0.1171875
+~~~
+{: .output}
+
