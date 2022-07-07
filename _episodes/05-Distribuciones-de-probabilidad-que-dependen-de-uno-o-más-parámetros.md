@@ -15,6 +15,11 @@ El científico realiza mediciones y las usa para encontrar fórmulas matemática
 ## La distribución Gama y sus parámetros
 La función de densidad de una variable Gamma está dada por:
 
-$$ \frac{1}{\Theta^{\alpha}\Gamma(alpha)}x^{\alpha-1}e^{-x/\Theta} $$
+$$ \frac{1}{\Theta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\Theta} $$
 
 en donde $ \alpha $ es el parámetro de forma y $ \Theta $ el parámetro de escala. En la figura, $ \alpha $ toma los valores 1.5, 2, 3, 4.5, 6. El parámetro de escala $ \Theta $ se mantuvo constante e igual a 1. Ver archivo `Gama.1.r`.
+
+![Forking Repositories]({{ page.root }}/fig/Distribucion1.png)
+
+## Método del rechazo para generar muestras
+El método del rechazo nos permite simular la realización de una variable aleatoria definida por una funci ́on de densidad arbitraria. Esta función puede depender de uno o más parámetros. Ver el archivo `Método.del.Rechazo.r` .
