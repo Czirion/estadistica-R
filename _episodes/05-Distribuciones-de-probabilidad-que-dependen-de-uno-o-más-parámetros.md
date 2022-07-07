@@ -23,3 +23,19 @@ en donde $ \alpha $ es el parámetro de forma y $ \Theta $ el parámetro de esca
 
 ## Método del rechazo para generar muestras
 El método del rechazo nos permite simular la realización de una variable aleatoria definida por una funci ́on de densidad arbitraria. Esta función puede depender de uno o más parámetros. Ver el archivo `Método.del.Rechazo.r` .
+
+~~~
+> ejectionK <- function(fx, a, b, K) {
+> # simula una variable con funci ́on de densidad fx
+> # supone que fx es 0 fuera de [1, b] y acatada por K
+>   while (TRUE) {
+>     x <- runif(1, a, b)
+>     y <- runif(1, 0, K)
+>     if (y < fx(x)) return(x)
+>   }
+> }
+~~~
+{: .language-r}
+
+1. Genere X∼Uni[a,b] y Y∼Uni[0,K], variables independientes.
+2. Si Y < fx(X) entonces se reporta X, en otro caso, ir al paso 1.
