@@ -44,3 +44,58 @@ El método del rechazo nos permite simular la realización de una variable aleat
 Los estimadores por el método de los momentos están dados por $ \widehat{\alpha}=\frac{m_{1}^{2}}{m_{2}-m_{1}^{2}} $ y $ \widehat{\Theta}=\frac{m_{2}-m_{1}^{2}}{m_{1}} $ en donde $ m_{k}= \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} $ .
 
 En la figura se muestra el histograma de 10 000 estimaciones realizadas a partir de muestra de tamaño 50 cada una. La línea punteada en rojo muestra el valor real del parámetro.
+
+![Forking Repositories]({{ page.root }}/fig/Histograma2.png)
+
+Ver archivo `Gama.Momentos.r` .
+
+Tamaño de la muestra:
+~~~
+> muestra <- 200
+~~~
+{: .language-r}
+
+Número de muestras:
+~~~
+> tot <- 10000
+~~~
+{: .language-r}
+
+Parámetro de forma:
+~~~
+> a <- 10
+~~~
+{: .language-r}
+
+Parámetro de escala:
+~~~
+> t <- 0.5
+~~~
+{: .language-r}
+
+Se inicializan las variables:
+~~~
+> t.hat <- c()
+> a.hat <- c()
+~~~
+{: .language-r}
+
+Y después:
+~~~
+> for(i in 1:tot) {
+>   m <- rgamma(muestra, shape=a, scale=t)
+>   m1 <- mean(m)
+>   m2 <- sum(m^2)/muestra
+>   t.hat[i] <- (m2-m1^2)/m1
+>   a.hat[i] <- m1 ˆ 2/(m2-m1^2)
+> }
+~~~
+{: .language-r}
+
+Para ver la sálida del código anterior:
+~~~
+> hist(a.hat)
+> hist(t.hat)
+~~~
+{: .language-r}
+
