@@ -105,6 +105,6 @@ La siguiente tabla contiene algunos estimadores según el método de los momento
 | ------- | ----------- |
 | Uniforme [0,a] | $ \widehat{\alpha}=2\overline{X} $ |
 | Bernoulli(p) | $ \widehat{p}=\overline{X} $ |
-| Binomial(n,p) | $ \widehat{p}=\overline{X} $  |
-| Poisson $ (\alpha) $ | $ \widehat{p}=\overline{X} $ |
-| Normal $ (\mu,\sigma^{2}) $ | $ \widehat{p}=\overline{X} $ |
+| Binomial(n,p) | $ \widehat{n}=m_{1}^{2}/(m_{1}+m_{1}^{2}-m_{2}), \widehat{p}= m_{1}/\widehat{n} $  |
+| Poisson $ (\alpha) $ | $ \widehat{\lambda}=\overline{X} $ |
+| Normal $ (\mu,\sigma^{2}) $ | $ \widehat{\mu}=\overline{X},\widehat{\sigma}^{2}=m_{2}-m_{1}^{2} $ |
