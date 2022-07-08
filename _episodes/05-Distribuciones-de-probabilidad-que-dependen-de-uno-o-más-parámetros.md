@@ -108,3 +108,17 @@ La siguiente tabla contiene algunos estimadores según el método de los momento
 | Binomial(n,p) | $ \widehat{n}=m_{1}^{2}/(m_{1}+m_{1}^{2}-m_{2}), \widehat{p}= m_{1}/\widehat{n} $  |
 | Poisson $ (\alpha) $ | $ \widehat{\lambda}=\overline{X} $ |
 | Normal $ (\mu,\sigma^{2}) $ | $ \widehat{\mu}=\overline{X},\widehat{\sigma}^{2}=m_{2}-m_{1}^{2} $ |
+
+La distribución logarítmica tiene distribución de masa y media dadas respectivamente por $ f(k)= \frac{-p^{k}}{klog(1-p)} $ y $ M_{1}(p)=\frac{-p}{(1-p)log(1-p)} $ .
+
+Desafortunadamente no es posible resolver la ecuación M1(p) = m1 para obtener $ \widehat{p} $ en función de m1. Sin embargo, esta ecuación se puede resolver numéricamente. Para este fin, se define la siguiente función.
+
+~~~
+> fun <- function(p) {
+>   a <- (1-p)∗log(1-p)
+>   return(-p/a-m1)
+> }
+~~~
+{: .language-r}
+ 
+ 
