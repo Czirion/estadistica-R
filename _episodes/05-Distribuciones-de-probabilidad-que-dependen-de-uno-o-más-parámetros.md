@@ -41,6 +41,4 @@ El método del rechazo nos permite simular la realización de una variable aleat
 2. Si Y < fx(X) entonces se reporta X, en otro caso, ir al paso 1.
 
 ## Método de Momentos
-Los estimadores por el método de los momentos están dados por
-
-$ \widehat{\alpha}=\frac{m_{1}^{2}}{m_{2}-m_{1}^{2}} $ y $ \widehat{\Theta}=\frac{m_{2}-m_{1}^{2}}{m_{1}} $ en donde $ m_{k}= \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} $
+Los estimadores por el método de los momentos están dados por $ \widehat{\alpha}=\frac{m_{1}^{2}}{m_{2}-m_{1}^{2}} $ y $ \widehat{\Theta}=\frac{m_{2}-m_{1}^{2}}{m_{1}} $ en donde $ m_{k}= \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} $
