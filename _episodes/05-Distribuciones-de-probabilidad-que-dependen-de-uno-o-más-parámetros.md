@@ -92,10 +92,19 @@ Y después:
 ~~~
 {: .language-r}
 
-Para ver la sálida del código anterior:
+Para ver la salida del código anterior:
 ~~~
 > hist(a.hat)
 > hist(t.hat)
 ~~~
 {: .language-r}
 
+La siguiente tabla contiene algunos estimadores según el método de los momentos. Note que $ m_{1}=\overline{X} $ .
+
+| Nombre   | Formula |
+| ------- | ----------- |
+| Uniforme [0,a] | $ \widehat{\alpha}=2\overline{X} $ |
+| Bernoulli(p) | $ \widehat{p}=\overline{X} $ |
+| Binomial(n,p) | $ \widehat{p}=\overline{X} $  |
+| Poisson $ (\alpha) $ | $ \widehat{p}=\overline{X} $ |
+| Normal $ (\mu,\sigma^{2}) $ | $ \widehat{p}=\overline{X} $ |
