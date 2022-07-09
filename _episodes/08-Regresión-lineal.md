@@ -62,7 +62,9 @@ Francis Galton (1822-1911) fue un polímata, antropólogo, geógrafo, explorador
 
 En estadística, la regresión hacia la media es el fenómeno en el que si una variable es extrema en su primera medición, tenderá a estar más cerca de la media en su segunda medición y, paradójicamente, si es extrema en su segunda medición, tenderá a haber estado más cerca de la media en su primera. 
 
-## Regresión lineal simple: diagrama
+## Regresión lineal simple
+
+### Diagrama de dispersión
 
 ~~~
 > recta <- function(x) 1 + 5*x  #Defina una función lineal "recta(x)"
@@ -76,6 +78,8 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 {: .language-r}
 
 ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png)
+
+### Recta estimada
 
 ~~~
 > cor(x, y) # calcula la correlación entre x, y
@@ -117,5 +121,40 @@ Coefficients:
 {: .language-r}
 
 ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph3.png)
+
+### Estadísticos del modelo
+
+~~~
+> summary(A) # para obtener el resumen del modelo
+~~~
+{: .language-r}
+
+~~~
+Call:
+lm(formula = y ~ x)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-7.623 -3.364 -1.708  3.693 14.355 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   5.1919     4.7498   1.093 0.306184    
+x             4.6657     0.7655   6.095 0.000291 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.953 on 8 degrees of freedom
+Multiple R-squared:  0.8228,	Adjusted R-squared:  0.8007 
+F-statistic: 37.15 on 1 and 8 DF,  p-value: 0.0002911
+~~~
+{: .output}
+
+## Coeficiente de determinación $$ R^{2} $$
+
+El coeficiente de determinación de la regresión está dado por:
+$ R^{2} = \frac{\textrm{suma de cuadrados de la regresión}}{\textrm{suma de cuadrados del error}} = \frac{S_{xy}^{2}}{S_{xx} S_{yy}} $
+
+
 
 
