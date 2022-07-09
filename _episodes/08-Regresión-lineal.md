@@ -150,10 +150,35 @@ F-statistic: 37.15 on 1 and 8 DF,  p-value: 0.0002911
 ~~~
 {: .output}
 
-## Coeficiente de determinación $$ R^{2} $$
+## Coeficiente de determinación $ R^{2} $
 
 El coeficiente de determinación de la regresión está dado por:
-$ R^{2} = \frac{\textrm{suma de cuadrados de la regresión}}{\textrm{suma de cuadrados del error}} = \frac{S_{xy}^{2}}{S_{xx} S_{yy}} $
+$$ R^{2} = \frac{\textrm{suma de cuadrados de la regresión}}{\textrm{suma de cuadrados del error}} = \frac{S_{xy}^{2}}{S_{xx} S_{yy}} $$
+
+El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los datos que se explica por el modelo. $R^{2}$ no debe usarse para evaluar el ajuste del modelo a los datos
+
+## Gráfica de los residuales
+
+~~~
+> set.seed(405)
+> x <- seq(from=0.1, to=10, by=0.1)
+> Y <- recta(x)+rnorm(length(x), 0, 5)
+> A <- lm(Y ∼ x)
+> modelo <- function(x) -0.3041+5.2817∗x
+> Y1 <- modelo(x)
+> qqnorm(Y-Y1, pch=“o”)
+~~~
+{: .language-r}
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph4.png)
+
+~~~
+> qqline(Y-Y1)
+~~~
+{: .language-r}
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph5.png)
+
 
 
 
