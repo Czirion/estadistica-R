@@ -75,9 +75,47 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 ~~~
 {: .language-r}
 
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png)
+
 ~~~
-`![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png)`
+> cor(x, y) # calcula la correlación entre x, y
+~~~
+{: .language-r}
+
+~~~
+[1] 0.907086
 ~~~
 {: .output}
+
+~~~
+> A <- lm(y ∼ x) # asigna a A el modelo estimado y=b+m∗x
+> print(A) # despliega los coeficientes calculados para el modelo
+~~~
+{: .language-r}
+
+~~~
+Call:
+lm(formula = y ~ x)
+
+Coefficients:
+(Intercept)            x  
+      5.192        4.666 
+~~~
+{: .output}
+
+~~~
+> abline(A) # añade la recta de regresi´on al diagrama de dispersi´on
+~~~
+{: .language-r}
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph2.png)
+
+
+~~~
+> plot(A, which=1, add.smooth=FALSE) # grafica los residuales
+~~~
+{: .language-r}
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph3.png)
 
 
