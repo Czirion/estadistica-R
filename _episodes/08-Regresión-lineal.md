@@ -185,7 +185,7 @@ El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los dat
 R usa cuatro tipos básicos de estructuras de datos:
 
 1. Un vector puede tener entradas numéricas, de texto o de valores lógicos.
-2. Un arreglo (array) es un vector con especificaciones de dimensión. El arreglo m´as com´un es la matriz.
+2. Un arreglo (array) es un vector con especificaciones de dimensión. El arreglo más común es la matriz.
 3. Un factor es un objeto usado para definir variables categóricas.
 4. Un marco de datos (data frame) es una lista de vectores de la misma dimensión. Cada vector en un marco de datos corresponde a una variable de un experimento
 
@@ -206,6 +206,38 @@ print(datos)
 3  3.4 tipo C FALSE
 4  5.6 tipo D  TRUE
 5  7.0 tipo E FALSE
+~~~
+{: .output}
+
+Con el comando fix(datos) se pueden hacer modificaciones a este marco de datos
+
+## Regresión Lineal Multiple
+
+~~~
+> set.seed(777)
+> f <- function(x, y) 3∗x-5∗y+1
+> x <- runif(20, 0, 10)
+> y <- runif(20, 0, 10)
+> resp <- f(x, y) + rnorm(20, 0, 3)
+> datos <- data.frame(x, y, resp)
+> plot(datos, cex=1.5, cex.axis=2) # genera la gr´afica: >lm(datos$resp∼datos$x+datos$y)
+~~~
+{: .language-r}
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph6.png)
+
+~~~
+> lm(datos$resp∼datos$x+datos$y)
+~~~
+{: .language-r}
+
+~~~
+Call:
+lm(formula = datos$resp ~ datos$x + datos$y)
+
+Coefficients:
+(Intercept)      datos$x      datos$y  
+     -0.658        3.256       -4.958 
 ~~~
 {: .output}
 
