@@ -180,7 +180,32 @@ El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los dat
 
 ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph5.png)
 
+## Estructura de datos
 
+R usa cuatro tipos básicos de estructuras de datos:
 
+1. Un vector puede tener entradas numéricas, de texto o de valores lógicos.
+2. Un arreglo (array) es un vector con especificaciones de dimensión. El arreglo m´as com´un es la matriz.
+3. Un factor es un objeto usado para definir variables categóricas.
+4. Un marco de datos (data frame) es una lista de vectores de la misma dimensión. Cada vector en un marco de datos corresponde a una variable de un experimento
 
+~~~
+vec2 <- c(1, 2, 3.4, 5.6, 7)
+vec3 <- c("tipo A", "tipo B", "tipo C", "tipo D", "tipo E")
+vec4 <- c(TRUE, TRUE, FALSE, TRUE, FALSE)
+f1 <- factor(vec3) # usa el vector vec3 para hacer el factor f1
+datos <- data.frame(vec2, f1, vec4) 
+print(datos)
+~~~
+{: .language-r}
+
+~~~
+  vec2     f1  vec4
+1  1.0 tipo A  TRUE
+2  2.0 tipo B  TRUE
+3  3.4 tipo C FALSE
+4  5.6 tipo D  TRUE
+5  7.0 tipo E FALSE
+~~~
+{: .output}
 
