@@ -153,6 +153,7 @@ F-statistic: 37.15 on 1 and 8 DF,  p-value: 0.0002911
 ## Coeficiente de determinación $ R^{2} $
 
 El coeficiente de determinación de la regresión está dado por:
+
 $$ R^{2} = \frac{\textrm{suma de cuadrados de la regresión}}{\textrm{suma de cuadrados del error}} = \frac{S_{xy}^{2}}{S_{xx} S_{yy}} $$
 
 El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los datos que se explica por el modelo. $R^{2}$ no debe usarse para evaluar el ajuste del modelo a los datos
