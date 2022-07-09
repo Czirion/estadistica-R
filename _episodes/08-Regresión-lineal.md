@@ -249,8 +249,9 @@ $$ y_{i} = \beta_{0} + \beta_{1} u_{i} + \beta_{2} v_{i} + \beta_{3} w_{i} + \ep
 
 Con el comando >fit <- lm(y ∼ u + v + w) se obtiene el ajuste del modelo. La tabla siguiente contiene comandos para obtener distintas estadísticos de la regresión
 
-
 |-------------------|--------------------------------------------------------|
+|      Comando      |                         Función                        |
+|:-----------------:+:------------------------------------------------------:|
 |     anova(fit)    |                      Tabla ANOVA                       |
 |-------------------|--------------------------------------------------------|
 |coefficientes(fit) |                 Coeficientes del modelo                |
