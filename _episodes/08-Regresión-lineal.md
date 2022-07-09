@@ -241,3 +241,26 @@ Coefficients:
 ~~~
 {: .output}
 
+### Varios comandos para la regresión lineal
+
+Suponga que se tienen datos de la siguiente forma
+
+$$ y_{i} = \beta_{0} + \beta_{1} u_{i} + \beta_{2} v_{i} + \beta_{3} w_{i} + \epsilon_{i} $$
+
+Con el comando >fit <- lm(y ∼ u + v + w) se obtiene el ajuste del modelo. La tabla siguiente contiene comandos para obtener distintas estadísticos de la regresión
+
+
+|-------------------|--------------------------------------------------------|
+|     anova(fit)    |                      Tabla ANOVA                       |
+|-------------------|--------------------------------------------------------|
+|coefficientes(fit) |                 Coeficientes del modelo                |
+|-------------------|--------------------------------------------------------|
+|    confint(fit)   |      Intervalos de confianza para los coeficientes     |
+|-------------------|--------------------------------------------------------|
+|    fitted(fit)    |              valores estimados $ y_{i} $               |
+|-------------------|--------------------------------------------------------|
+|  residuals(fit)   |                    Los residuales                      |
+|-------------------|--------------------------------------------------------|
+|    summary(fit)   |       Los principales estadísticos de la regresión     |
+|-------------------|--------------------------------------------------------|
+
