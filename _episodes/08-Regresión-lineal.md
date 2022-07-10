@@ -279,3 +279,33 @@ Con los dos comandos que siguen, es posible seleccionar el mejor conjunto de var
 ~~~
 {: .language-r}
 
+## Análisis de regresión
+### Variables indicadoras
+
+Considere el modelo $ y = \beta_{0} + \beta_{1} u+ \beta_{2} v + \epsilon $, en donde la variable $ v $ solamente puede tomar los valores 0 o 1. En la gráfica los valores de $ y $ que se obtienen cuando $ v = 0 $, aparecen en negro y los mismos valores cuando $ v = 1 $, aparecen en rojo. Es interesante la prueba de hipótesis según la cual dos interceptan (cuando $ v = 0 $ y $ v = 1 $) son iguales 
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph7.png)
+
+Con el modelo de la lámina anterior, $ Y = \beta_{0} + \beta_{1} u + \beta_{2} v + \epsilon $ consideramos ahora el ajuste del modelo ampliado
+
+$$ Y = \beta_{0} + \beta_{1} u + \beta_{2} v + \beta_{12} u v + \epsilon $$
+
+Cuando $ v = 0 $, se obtiene que
+
+$$ E(Y) = \beta_{0} + \beta_{1} u $$
+
+Cuando $ v = 1 $, se obtiene que 
+
+$$ E(Y) = \beta_{0} + \beta_{1} u + \beta_{2} + \beta_{12} u = (\beta_{0} + \beta_{2}) + (\beta_{1} + \beta_{12}) u $$
+
+Son interesante las hipótesis nulas $ H_{0} : \beta_{2} = 0 y H_{0} : \beta_{12} = 0 $
+
+## Regresión polinomial
+
+Cuando queremos ajustar a un conjunto de datos, un modelo de la forma
+
+$$ y = \beta_{0} + \beta_{1} u + \beta_{2} u^{2} + \cdots + \beta_{p} u^{p} + \epsilon $$
+
+se usa el comando `>lm(y ∼ poly(u, p, raw=TRUE))` , en donde $ p $ es el grado del polinomio que queresmo ajustar.
+
+![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph8.png)
