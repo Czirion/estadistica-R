@@ -298,7 +298,7 @@ Cuando $ v = 1 $, se obtiene que
 
 $$ E(Y) = \beta_{0} + \beta_{1} u + \beta_{2} + \beta_{12} u = (\beta_{0} + \beta_{2}) + (\beta_{1} + \beta_{12}) u $$
 
-Son interesante las hipótesis nulas $ H_{0} : \beta_{2} = 0 y H_{0} : \beta_{12} = 0 $
+Son interesante las hipótesis nulas $ H_{0} : \beta_{2} = 0 $  y $ H_{0} : \beta_{12} = 0 $
 
 ## Regresión polinomial
 
