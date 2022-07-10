@@ -167,7 +167,7 @@ El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los dat
 > A <- lm(Y ∼ x)
 > modelo <- function(x) -0.3041+5.2817∗x
 > Y1 <- modelo(x)
-> qqnorm(Y-Y1, pch=“o”)
+> qqnorm(Y-Y1, pch="o")
 ~~~
 {: .language-r}
 
@@ -247,7 +247,7 @@ Suponga que se tienen datos de la siguiente forma
 
 $$ y_{i} = \beta_{0} + \beta_{1} u_{i} + \beta_{2} v_{i} + \beta_{3} w_{i} + \epsilon_{i} $$
 
-Con el comando >fit <- lm(y ∼ u + v + w) se obtiene el ajuste del modelo. La tabla siguiente contiene comandos para obtener distintas estadísticos de la regresión
+Con el comando `>fit <- lm(y ∼ u + v + w)` se obtiene el ajuste del modelo. La tabla siguiente contiene comandos para obtener distintas estadísticos de la regresión
 
 |-------------------|--------------------------------------------------------|
 |      Comando      |                         Función                        |
@@ -264,4 +264,18 @@ Con el comando >fit <- lm(y ∼ u + v + w) se obtiene el ajuste del modelo. La t
 |-------------------|--------------------------------------------------------|
 |    summary(fit)   |       Los principales estadísticos de la regresión     |
 |-------------------|--------------------------------------------------------|
+
+Con el comando `>lm(y ∼ x + 0)` se ajusta el modelo sin término constante $ y_{i} = \beta x_{i} + \epsilon_{i} $
+
+Con el comando `>lm(y ∼ u∗v)` se ajusta el modelo
+
+$$ y_{i} = \beta_{0} + \beta_{1} u_{i} + \beta_{2} v_{i} + \beta_{3} u_{i} v_{i} + \epsilon_{i} $$
+
+Con los dos comandos que siguen, es posible seleccionar el mejor conjunto de variables explicativas.
+
+~~~
+> full.model <- lm(y ∼ u + v + w + z)
+> reduced.model <- step(full.model, direction="backward")
+~~~
+{: .language-r}
 
