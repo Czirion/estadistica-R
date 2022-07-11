@@ -111,7 +111,7 @@ La siguiente tabla contiene algunos estimadores según el método de los momento
 
 La distribución logarítmica tiene distribución de masa y media dadas respectivamente por $ f(k)= \frac{-p^{k}}{klog(1-p)} $ y $ M_{1}(p)=\frac{-p}{(1-p)log(1-p)} $ .
 
-Desafortunadamente no es posible resolver la ecuación M1(p) = m1 para obtener $ \widehat{p} $ en función de m1. Sin embargo, esta ecuación se puede resolver numéricamente. Para este fin, se define la siguiente función.
+Desafortunadamente no es posible resolver la ecuación $ M_{1}(p) = m_{1} $ para obtener $ \widehat{p} $ en función de $ m_{1} $ . Sin embargo, esta ecuación se puede resolver numéricamente. Para este fin, se define la siguiente función.
 
 ~~~
 > fun <- function(p) {
@@ -121,4 +121,12 @@ Desafortunadamente no es posible resolver la ecuación M1(p) = m1 para obtener $
 ~~~
 {: .language-r}
  
+ Con el siguiente comando se obtiene el valor numérico para $ \widehat{p} $ una vez que $ m_{2} $ es conocido.
  
+~~~
+> uniroot(fun, c(0.01, 0.9))$root
+~~~
+{: .language-r}
+
+Ver el archivo `Distribución.Logarítmica.r`. En este archivo también se programaron los comandos para realizar la simulación de la variable aleatoria.
+
