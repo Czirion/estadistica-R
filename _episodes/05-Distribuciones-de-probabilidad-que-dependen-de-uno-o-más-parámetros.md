@@ -130,3 +130,37 @@ Desafortunadamente no es posible resolver la ecuación $ M_{1}(p) = m_{1} $ para
 
 Ver el archivo `Distribución.Logarítmica.r`. En este archivo también se programaron los comandos para realizar la simulación de la variable aleatoria.
 
+~~~
+> fd <- function(n=k, probabilidad=p) { # la distribución de masa
+>  a <- -probabilidad^n
+>  b <- n∗log(1-probabilidad)
+>  return(a/b)
+> }
+> sim <- function(p) { # función que simula una variable logarítmica
+>  rnd <- runif(1)
+>  k <- 0
+>  sum <- 0
+>  while(rnd>sum) {
+>     k <- k+1
+>     sum <- sum+fd(k, p) 
+>  }
+> return(k)
+> }
+~~~
+{: .language-r}
+
+Se generan tot valores de la variable aleatoria:
+
+~~~
+> tot <- 50000
+> u <- matrix(0.35, tot, 1)
+> z <- sapply(u, sim)
+~~~
+{: .language-r}
+
+Se utilizan los valores generados para estimar el parámetro p:
+
+~~~
+> print(uniroot(fun, c(0.01, 0.99), mean(z))$root)
+~~~
+{: .language-r}
