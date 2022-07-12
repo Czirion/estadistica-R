@@ -22,7 +22,7 @@ en donde $ \alpha $ es el parámetro de forma y $ \Theta $ el parámetro de esca
 ![Forking Repositories]({{ page.root }}/fig/Distribucion1.png)
 
 ## Método del rechazo para generar muestras
-El método del rechazo nos permite simular la realización de una variable aleatoria definida por una funci ́on de densidad arbitraria. Esta función puede depender de uno o más parámetros. Ver el archivo `Método.del.Rechazo.r` .
+El método del rechazo nos permite simular la realización de una variable aleatoria definida por una función de densidad arbitraria. Esta función puede depender de uno o más parámetros. Ver el archivo `Método.del.Rechazo.r` .
 
 ~~~
 > ejectionK <- function(fx, a, b, K) {
