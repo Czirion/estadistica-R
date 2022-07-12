@@ -13,6 +13,6 @@ keypoints:
 ## Máxima Verosimilitud
 
 
-Ronald Fisher (1890-1962) se dio cuenta de que los m ́etodos que Karl Pearson hab ́ıa estado usando para estimar los parámetros de una distribución, producían estadísticos
+Ronald Fisher (1890-1962) se dio cuenta de que los métodos que Karl Pearson había estado usando para estimar los parámetros de una distribución, producían estadísticos
 que no necesariamente eran consistentes y que con frecuencia presentaban un sesgo. Para producir estadísticos consistentes y eficientes, Fisher propuso algo que
 ́él denominó <<estimadores de máxima verosimilitud>>.
