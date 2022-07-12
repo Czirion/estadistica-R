@@ -10,7 +10,7 @@ keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
 
-# Máxima Verosimilitud
+## Máxima Verosimilitud
 
 
 Ronald Fisher (1890-1962) se dio cuenta de que los m ́etodos que Karl Pearson hab ́ıa estado usando para estimar los parámetros de una distribución, producían estadísticos
