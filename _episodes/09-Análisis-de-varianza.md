@@ -9,3 +9,6 @@ objectives:
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
+
+## Análisis de Varianza
+En 1919, la Estación Rothamsted contrató al joven estadístico Ronals Aylmer Fisher para que aprovecara los datos ahí acumulados. El na
