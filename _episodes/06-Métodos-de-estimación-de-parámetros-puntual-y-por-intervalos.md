@@ -17,4 +17,6 @@ Ronald Fisher (1890-1962) se dio cuenta de que los métodos que Karl Pearson hab
 que no necesariamente eran consistentes y que con frecuencia presentaban un sesgo. Para producir estadísticos consistentes y eficientes, Fisher propuso algo que
 ́él denominó <<estimadores de máxima verosimilitud>>.
 
-La función de verosimilitud de una muestra $ X_{1},..., X_{n} $ está dada por
+La función de verosimilitud de una muestra $ X_{1},..., X_{n} $ está dada por: 
+
+$$ L(\Theta)= f(x_{1}|\Theta)f(x_{2}|\Theta)...(x_{n}|\Theta) $$ 
