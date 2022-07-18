@@ -16,3 +16,5 @@ keypoints:
 Ronald Fisher (1890-1962) se dio cuenta de que los métodos que Karl Pearson había estado usando para estimar los parámetros de una distribución, producían estadísticos
 que no necesariamente eran consistentes y que con frecuencia presentaban un sesgo. Para producir estadísticos consistentes y eficientes, Fisher propuso algo que
 ́él denominó <<estimadores de máxima verosimilitud>>.
+
+La función de verosimilitud de una muestra $ X_{1},..., X_{n} $ está dada por
