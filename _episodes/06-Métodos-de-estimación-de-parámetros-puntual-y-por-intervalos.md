@@ -20,3 +20,11 @@ que no necesariamente eran consistentes y que con frecuencia presentaban un sesg
 La función de verosimilitud de una muestra $ X_{1},..., X_{n} $ está dada por: 
 
 $$ L(\Theta)= f(x_{1}|\Theta)f(x_{2}|\Theta)...(x_{n}|\Theta) $$ 
+
+El estimador máximo verosímil $ \widehat{\Theta} $ del parámetro $ \Theta $ , es aquel valor para el cual:
+
+$$ \mathscr{l}(\Theta)= log L(\Theta) $$
+
+es máximo. Si el tamaño n de la muestra es grande, entonces $ \widehat{\Theta} $ tiene una distribución aproximadamente normal con media $ \Theta $ y varianza:
+
+
