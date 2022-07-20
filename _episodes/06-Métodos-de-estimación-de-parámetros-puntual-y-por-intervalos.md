@@ -25,6 +25,7 @@ El estimador máximo verosímil $ \widehat{\Theta} $ del parámetro $ \Theta $ ,
 
 $$ \mathscr{l}(\Theta)= log L(\Theta) $$
 
-es máximo. Si el tamaño n de la muestra es grande, entonces $ \widehat{\Theta} $ tiene una distribución aproximadamente normal con media $ \Theta $ y varianza:
+es máximo. Si el tamaño  $ n $  de la muestra es grande, entonces $ \widehat{\Theta} $ tiene una distribución aproximadamente normal con media $ \Theta $ y varianza:
 
+$$ var(\widehat{\Theta_{n}}) =\frac{1}{nE [{\frac{d}{d\Theta}}logf(X|\Theta)]^{2}} $$
 
