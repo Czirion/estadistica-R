@@ -29,3 +29,5 @@ es máximo. Si el tamaño  $ n $  de la muestra es grande, entonces $ \widehat{\
 
 $$ var(\widehat{\Theta_{n}}) =\frac{1}{nE [{\frac{d}{d\Theta}}logf(X|\Theta)]^{2}} $$
 
+Note que $ var(\widehat{\Theta_{n}})\to 0 $ cuando $ n\to \infty $ . Ver el archivo `EMV.Exponencial.r`.
+
