@@ -69,13 +69,14 @@ $$ Y = \beta_{0} + \beta_{1} v + \beta_{2} w + \epsilon $$
 en donde $ v $ y $ w $ son variables indicadoras que solamente toman los valores 0 a 1, pero no se da el caso de que $ v = w = 1 $. Note que 
 
 $$
-   
+\[   
 E(Y) = 
      \begin{cases}
        \beta_{0} &\quad\text{si} v = 0 \text{ y } w = 0\\
        \beta_{0} + \beta_{1} &\quad\text{si} v = 1 \text{ y } w = 0\\
        \beta_{0} + \beta_{2} &\quad\text{si} v = 0 \text{ y } w = 1\\
      \end{cases}
+ \]
 
 $$
 
