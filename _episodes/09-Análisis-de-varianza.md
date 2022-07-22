@@ -50,7 +50,7 @@ F = 1.6901, num df = 2, denom df =
 ~~~
 {: .output}
 
-En la figura de la izquierda se reportan los diagramas de caja de las tres poblacionse generadas por el código anterior. Dentro de cada caja yacen las observaciones entre loso cuartiles $ Q_{1} $ y $ Q_{3} $ de cada población. Los "bigotes" se extienden hasta los valores máximo de la serie o hasta $ 1.5 x (Q_{3} - Q{1}).
+En la figura de la izquierda se reportan los diagramas de caja de las tres poblacionse generadas por el código anterior. Dentro de cada caja yacen las observaciones entre loso cuartiles $ Q_{1} $ y $ Q_{3} $ de cada población. Los "bigotes" se extienden hasta los valores máximo de la serie o hasta $ 1.5 x (Q_{3} - Q{1}) $.
 
 En la figura de la derecha se reportan los intervalos "estudentizados" mediante el procedimiento de Tukey.
 
@@ -62,6 +62,17 @@ Para la hipótesis nula según la cual no hay diferencias en el consumo, se tien
 
 nota
 
+En el archivo `Solo.Variables.Indicadoras` se considera un modelo de regresión de la forma
 
+$$ Y = \beta_{0} + \beta_{1} v + \beta_{2} w + \epsilon
+
+en donde $ v $ y $ w $ son variables indicadoras que solamente toman los valores 0 a 1, pero no se da el caso de que $ v = w = 1 $. Note que 
+
+$$
+\begin{multline}
+1+2+3+4+8x+7=1+2+3+4+4x+35 \\
+\Rightarrow x=7
+\end{multline}
+$$
 
 
