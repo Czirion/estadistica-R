@@ -241,6 +241,8 @@ Coefficients:
 ~~~
 {: .output}
 
+Ver el archivo `Regresión.Múltiple.r`
+
 ### Varios comandos para la regresión lineal
 
 Suponga que se tienen datos de la siguiente forma
@@ -265,11 +267,15 @@ Con el comando `>fit <- lm(y ∼ u + v + w)` se obtiene el ajuste del modelo. La
 |    summary(fit)   |       Los principales estadísticos de la regresión     |
 |-------------------|--------------------------------------------------------|
 
+Ver el archivo `Regresión.Comandos.Varios.r`
+
 Con el comando `>lm(y ∼ x + 0)` se ajusta el modelo sin término constante $ y_{i} = \beta x_{i} + \epsilon_{i} $
 
 Con el comando `>lm(y ∼ u∗v)` se ajusta el modelo
 
 $$ y_{i} = \beta_{0} + \beta_{1} u_{i} + \beta_{2} v_{i} + \beta_{3} u_{i} v_{i} + \epsilon_{i} $$
+
+Ver el archivo `Regresión.Términos.Cruzados.r`
 
 Con los dos comandos que siguen, es posible seleccionar el mejor conjunto de variables explicativas.
 
@@ -279,12 +285,16 @@ Con los dos comandos que siguen, es posible seleccionar el mejor conjunto de var
 ~~~
 {: .language-r}
 
+Ver el archivo `Regresión.Modelo.Reducido.r`
+
 ## Análisis de regresión
 ### Variables indicadoras
 
 Considere el modelo $ y = \beta_{0} + \beta_{1} u+ \beta_{2} v + \epsilon $, en donde la variable $ v $ solamente puede tomar los valores 0 o 1. En la gráfica los valores de $ y $ que se obtienen cuando $ v = 0 $, aparecen en negro y los mismos valores cuando $ v = 1 $, aparecen en rojo. Es interesante la prueba de hipótesis según la cual dos interceptan (cuando $ v = 0 $ y $ v = 1 $) son iguales 
 
 ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph7.png)
+
+Ver el archivo `Variables.Indicadores.r`
 
 Con el modelo de la lámina anterior, $ Y = \beta_{0} + \beta_{1} u + \beta_{2} v + \epsilon $ consideramos ahora el ajuste del modelo ampliado
 
@@ -309,3 +319,5 @@ $$ y = \beta_{0} + \beta_{1} u + \beta_{2} u^{2} + \cdots + \beta_{p} u^{p} + \e
 se usa el comando `>lm(y ∼ poly(u, p, raw=TRUE))` , en donde $ p $ es el grado del polinomio que queresmo ajustar.
 
 ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph8.png)
+
+Ver el archivo `Regresión.Polinomial.r`
