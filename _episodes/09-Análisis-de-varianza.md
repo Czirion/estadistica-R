@@ -31,9 +31,9 @@ Si $ H_{0} $ se cumple, entonces el estadístico de prueba $ F_{cal} = CMTr/CME 
 > b <- 1.5 + rnorm(10, 0, 0.7)
 > c <- 2.0 + rnorm(10, 0, 0.7)
 > obs <- c(a, b, c)
-> A <- rep(“A”, 10)
-> B <- rep(“B”, 10)
-> C <- rep(“C”, 10)
+> A <- rep("A", 10)
+> B <- rep("B", 10)
+> C <- rep("C", 10)
 > fac <- factor(c(A, B, C))
 > datos <- data.frame(obs, fac)
 > mod <- oneway.test(obs ∼ fac, data=datos, var.equal=TRUE)
@@ -114,4 +114,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 {: .output}
 
 Ver el archivo ´ANOVA.Acumulador.r´
+
+
+
 
