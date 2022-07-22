@@ -62,6 +62,8 @@ Para la hipótesis nula según la cual no hay diferencias en el consumo, se tien
 
 nota
 
+### El ANOVA de un factor como un caso de la regresión
+
 En el archivo `Solo.Variables.Indicadoras` se considera un modelo de regresión de la forma
 
 $$ Y = \beta_{0} + \beta_{1} v + \beta_{2} w + \epsilon $$
@@ -77,4 +79,39 @@ E(Y) =
      \end{cases}
 $$
 
+Cuando se varían los valores $ \beta_{0} $, $ \beta_{1} $, $ \beta_{2} $ se cambian los niveles del factor.
+
+### ANOVA con dos factores
+Un acumulador de energía eléctrica se puede construir de tres tipo distintos de materiales (factor 1 con tres niveles) y trabajará a distintas temperaturas (factor 2). Es de interés el número de horas de servicio del acumulador. El acumulador será probado a tres temperaturas distintas (los tres niveles del factor 2). En la tabla se reportan las horas de servicio obtenidas al aplicar cada tratamiento (combinación de niveles de los factores) a 4 acumuladores elegidos de forma aleatoria
+
+| Temperatura        | 15°                | 70°                | 125°            |
+|--------------------|--------------------|--------------------|-----------------|
+| Tipo 1 de material | 130, 155,  74, 180 | 34, 40, 80, 75     | 20, 70, 82, 58  |
+| Tipo 2 de material | 150, 188, 159, 126 | 136, 122, 106, 115 | 25, 70, 58, 45  |
+| Tipo 3 de material | 138, 110, 168, 160 | 174, 120, 150, 139 | 96, 104, 82, 60 |
+
+Con los siguientes comandos se realiza el análisis de varianza con dos factores para el problema planteado anteriormente.
+
+~~~
+> vida <- c(130, 74, 150, 159, 138, 168, 155, 180, 188, 126, 110, 160, 34, 80, 135, 106, 174, 150, 40, 75, 122, 115, 120, 139, 20, 82, 25, 58, 96, 82, 70, 58, 70, 45, 104, 60)
+> material <- rep(c(1,1,2,2,3,3), 6)
+> temp <- rep(c(15, 70, 125), each=12)
+> dat <- data.frame(resp=vida, tipo=factor(material), temperatura=factor(temp))
+> fit <- aov(resp ∼ tipo∗temperatura, data=dat)
+> summary(fit)
+~~~
+{: .language-r}
+
+~~~
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+tipo         2  10678    5339   6.269  0.00531 ** 
+temp         1  39043   39043  45.841 1.66e-07 ***
+tipo:temp    2   2315    1158   1.359  0.27226    
+Residuals   30  25551     852                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+~~~
+{: .output}
+
+Ver el archivo ´ANOVA.Acumulador.r´
 
