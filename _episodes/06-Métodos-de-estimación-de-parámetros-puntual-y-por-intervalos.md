@@ -116,4 +116,5 @@ Mediante `fit$estimate[[1]]`, o `fit[[1]][[1]]`, se obtiene el valor estimado pa
 
 ## Error Cuadrático Medio (ECM)
 
+Un estimador $ \widehat{\Theta_{1}} $ es mejor que $ \widehat{\Theta_{2}} $ si $ ECM(\widehat{\Theta_{1}}) $ < $ ECM(\widehat{\Theta_{2}}) $ .
 
