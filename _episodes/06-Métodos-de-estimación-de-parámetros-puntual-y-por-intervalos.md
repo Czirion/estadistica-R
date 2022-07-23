@@ -31,3 +31,36 @@ $$ var(\widehat{\Theta_{n}}) =\frac{1}{nE [{\frac{d}{d\Theta}}logf(X|\Theta)]^{2
 
 Note que $ var(\widehat{\Theta_{n}})\to 0 $ cuando $ n\to \infty $ . Ver el archivo `EMV.Exponencial.r`.
 
+~~~
+> LL <- function(r) { #el log de la función de verosimilitud
+>   R <- dexp(x, r)
+>   -sum(log(R))
+> }
+~~~
+{: .language-r}
+
+~~~
+> rt <- 2.5; N <- 1250; x <- rexp(N, rate=rt)
+> optim(rt, LL, method = “Brent”, lower=0.001, upper=100)$par
+~~~
+{: .language-r}
+
+~~~
+> tot <- 2000
+> a <- c()
+> for(i in 1:tot) {
+>     x <- rexp(N, rate=rt)
+>     a[i] <- optim(rt, LL, method = “Brent”, lower=0.001,
+>                   upper=100)$par
+>     if(i % %100==0) {print(i)}
+> }
+~~~
+{: .language-r}
+
+~~~
+> hist(a)
+~~~
+{: .language-r}
+
+
+
