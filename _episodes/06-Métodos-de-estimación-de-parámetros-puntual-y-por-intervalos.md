@@ -120,6 +120,8 @@ Un estimador $ \widehat{\Theta_{1}} $ es mejor que $ \widehat{\Theta_{2}} $ si $
 
 Si $ \widehat{\Theta} $ es insesgado, entonces $ ECM(\widehat{\Theta})= var(\widehat{\Theta}) $ .
 
-**Ejemplo.** La población: $ X ∼ Uniforme(0,\Theta) $ . Los estimadores:
+**Ejemplo.** La población: $ X ∼ $ Uniforme $ (0,\Theta) $ . Los estimadores:
 
-$ \widehat{\Theta_{1}}= 2\overline{X} $ y $ \widehat{\Theta_{2}}= \frac{n +1}{n}máx(X_{1},...,X_{n}) $ .
+$$ \widehat{\Theta_{1}}= 2\overline{X} $$ y $$ \widehat{\Theta_{2}}= \frac{n +1}{n}máx(X_{1},...,X_{n}) $$ .
+
+
