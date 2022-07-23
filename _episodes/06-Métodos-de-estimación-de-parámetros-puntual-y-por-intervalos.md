@@ -99,3 +99,5 @@ Considere nuevamente la tarea del ajuste de una distribución
 > fit <- fitdistr(x, "normal")
 ~~~
 {: .language-r}
+
+El comando `summary(fit)` despliega el contenido en el objeto fit.
