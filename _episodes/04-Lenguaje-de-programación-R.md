@@ -514,7 +514,9 @@ La siguiente instrucción sirve para calcular la probabilidad de que una variabl
 ~~~
 {: .output}
 
-***Nota:*** R reconoce a `dbinom` como a una función de densidad, aún cuando en sentido estricto se trata de una función de distribución de masa.
+> ## `Nota`
+> R reconoce a `dbinom` como a una función de densidad, aún cuando en sentido estricto se trata de una función de distribución de masa.
+{: .callout}
 
 Con la siguiente instrucción se calcula la probabilidad de que X ∼ Binomial(10, 5) sea menor o igual a 7.
 ~~~
@@ -549,7 +551,7 @@ El archivo `Histograma.Normal.r` contiene los comandos necesarios para generar l
 
 <img src="https://raw.githubusercontent.com/Czirion/estadistica-R/gh-pages/fig/Histograma1.png">
 
-En particular, el comando `hist(x)` genera el histograma de los datosn en el vector x.
+En particular, el comando `hist(x)` genera el histograma de los datos n en el vector x.
 ~~~
    dev.new(width=6, height=5)
    par(cex=1.5)
