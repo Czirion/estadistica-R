@@ -83,3 +83,9 @@ Con el comando `fitdistr` de la librería `MASS` es posible estimar los parámet
 > fitdistr(x, "geometric")
 ~~~
 {: .language-r}
+
+> ## `Nota`
+> En el  ́ultimo ejemplo, el comando `fitdistr` se ejecutó con el nombre "geometric" y no con el nombre "geom". Consulte la siguiente página.
+> https://stat.ethz.ch/R-manual/R-devel/library/MASS/html/fitdistr.html
+> .
+{: .callout}
