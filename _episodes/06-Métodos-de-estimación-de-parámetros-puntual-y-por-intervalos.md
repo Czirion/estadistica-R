@@ -109,3 +109,5 @@ El comando `summary(fit)` despliega el contenido en el objeto fit.
 | `vcov`     | 4      | -none- | numeric |
 | `n`        | 1      | -none- | numeric |
 | `loglik`   | 1      | -none- | numeric |
+
+Mediante `fit$estimate`, o `fit[[1]]`, se obtienen las estimaciones obtenidas.
