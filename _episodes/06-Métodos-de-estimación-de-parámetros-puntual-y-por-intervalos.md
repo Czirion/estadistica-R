@@ -49,7 +49,7 @@ Note que $ var(\widehat{\Theta_{n}})\to 0 $ cuando $ n\to \infty $ . Ver el arch
 > a <- c()
 > for(i in 1:tot) {
 >     x <- rexp(N, rate=rt)
->     a[i] <- optim(rt, LL, method = “Brent”, lower=0.001,
+>     a[i] <- optim(rt, LL, method = "Brent", lower=0.001,
 >                   upper=100)$par
 >     if(i % %100==0) {print(i)}
 > }
@@ -65,3 +65,21 @@ Note que $ var(\widehat{\Theta_{n}})\to 0 $ cuando $ n\to \infty $ . Ver el arch
 
 Con el comando `fitdistr` de la librería `MASS` es posible estimar los parámetros de una distribución mediante el método de máxima verosimilitud. He aquí algunos ejemplos.
 
+~~~
+> x <- rnorm(500, mean=0, sd=1)
+> library(MASS)
+> fitdistr(x, "normal")
+~~~
+{: .language-r}
+
+~~~
+> x <- rgamma(100, shape=10, scale=0.5)
+> fitdistr(x, "gamma")
+~~~
+{: .language-r}
+
+~~~
+> x <- rgeom(100, p=0.1)
+> fitdistr(x, "geometric")
+~~~
+{: .language-r}
