@@ -111,4 +111,9 @@ El comando `summary(fit)` despliega el contenido en el objeto fit.
 | `loglik`   | 1      | -none- | numeric |
 
 Mediante `fit$estimate`, o `fit[[1]]`, se obtienen las estimaciones obtenidas.
+
 Mediante `fit$estimate[[1]]`, o `fit[[1]][[1]]`, se obtiene el valor estimado para el primero de los parámetros
+
+## Error Cuadrático Medio (ECM)
+
+
