@@ -101,3 +101,11 @@ Considere nuevamente la tarea del ajuste de una distribución
 {: .language-r}
 
 El comando `summary(fit)` despliega el contenido en el objeto fit.
+
+|            | Length | Class  | Mode    |
+|------------|--------|--------|---------|
+| `estimate` | 2      | -none- | numeric |
+| `sd`       | 2      | -none- | numeric |
+| `vcov`     | 4      | -none- | numeric |
+| `n`        | 1      | -none- | numeric |
+| `loglik`   | 1      | -none- | numeric |
