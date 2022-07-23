@@ -12,7 +12,6 @@ keypoints:
 
 ## Máxima Verosimilitud
 
-
 Ronald Fisher (1890-1962) se dio cuenta de que los métodos que Karl Pearson había estado usando para estimar los parámetros de una distribución, producían estadísticos
 que no necesariamente eran consistentes y que con frecuencia presentaban un sesgo. Para producir estadísticos consistentes y eficientes, Fisher propuso algo que
 ́él denominó <<estimadores de máxima verosimilitud>>.
@@ -62,5 +61,7 @@ Note que $ var(\widehat{\Theta_{n}})\to 0 $ cuando $ n\to \infty $ . Ver el arch
 ~~~
 {: .language-r}
 
+### Máxima Verosimilitud: Ajuste de una distribución
 
+Con el comando `fitdistr` de la librería `MASS` es posible estimar los parámetros de una distribución mediante el método de máxima verosimilitud. He aquí algunos ejemplos.
 
