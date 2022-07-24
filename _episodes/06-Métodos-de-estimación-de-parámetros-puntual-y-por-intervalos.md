@@ -122,4 +122,6 @@ Si $ \widehat{\Theta} $ es insesgado, entonces $ ECM(\widehat{\Theta})= var(\wid
 
 **Ejemplo.** La población: $ X ∼ $ Uniforme $ (0,\Theta) $ . Los estimadores: $ \widehat{\Theta_{1}}= 2\overline{X} $ y $ \widehat{\Theta_{2}}= \frac{n +1}{n}max(X_{1},...,X_{n}) $ .
 
+Las varianzas de los estimadores:
 
+$ var(\widehat{\Theta_{2}})=\frac{\Theta_{2}}{n(n+2)} $
