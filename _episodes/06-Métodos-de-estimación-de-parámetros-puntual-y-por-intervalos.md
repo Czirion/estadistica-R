@@ -126,4 +126,6 @@ Las varianzas de los estimadores:
 
 $ var(\widehat{\Theta_{2}})=\frac{\Theta^{2}}{n(n+2)} $ y $ var(\widehat{\Theta_{1}})=\frac{\Theta^{2}}{3n} $ .
 
-er el archivo `Contraejemplo.r`.
+![Forking Repositories]({{ page.root }}/fig/ECM.png)
+
+Ver el archivo `Contraejemplo.r`.
