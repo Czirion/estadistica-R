@@ -133,3 +133,9 @@ Ver el archivo `Contraejemplo.r`.
 El p-ésimo cuantil de una variable aleatoria $ X $ es aquel valor $ \phi_{p}=\phi_{p}(X) $ para el cual:
 
 $$ p = P\left\{ X \le \phi_{p} \right\} $$
+
+Para calcular $ \phi_{0.75} $ de una Normal(0,1):
+~~~
+> qnorm(0.85, 0, 1)
+~~~
+{: .language-r}
