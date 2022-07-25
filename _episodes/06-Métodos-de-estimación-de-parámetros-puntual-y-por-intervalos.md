@@ -130,4 +130,6 @@ $ var(\widehat{\Theta_{2}})=\frac{\Theta^{2}}{n(n+2)} $ y $ var(\widehat{\Theta_
 
 Ver el archivo `Contraejemplo.r`.
 
-El p-ésimo cuantil de una variable aleatoria $ X $ es aquel valor $ \phi_{p}=\phi_{p}(X) $
+El p-ésimo cuantil de una variable aleatoria $ X $ es aquel valor $ \phi_{p}=\phi_{p}(X) $ para el cual:
+
+$$ p = P\left\{ X \le \phi_{p} \right\} $$
