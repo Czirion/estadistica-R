@@ -132,7 +132,7 @@ Ver el archivo `Contraejemplo.r`.
 
 El p-ésimo cuantil de una variable aleatoria $ X $ es aquel valor $ \phi_{p}=\phi_{p}(X) $ para el cual:
 
-$$ p = P\left\{ X \le \phi_{p} \right\} $$
+$$ p = P\{ X \le \phi_{p}\} $$
 
 Para calcular $ \phi_{0.75} $ de una Normal(0,1):
 ~~~
