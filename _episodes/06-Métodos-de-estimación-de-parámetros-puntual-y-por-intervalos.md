@@ -129,3 +129,5 @@ $ var(\widehat{\Theta_{2}})=\frac{\Theta^{2}}{n(n+2)} $ y $ var(\widehat{\Theta_
 ![Forking Repositories]({{ page.root }}/fig/ECM.png)
 
 Ver el archivo `Contraejemplo.r`.
+
+El p-ésimo cuantil de una variable aleatoria $ X $ es aquel valor $ \phi_{p}=\phi_{p}(X) $
