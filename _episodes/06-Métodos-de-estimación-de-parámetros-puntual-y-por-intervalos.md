@@ -139,3 +139,8 @@ Para calcular $ \phi_{0.75} $ de una Normal(0,1):
 > qnorm(0.85, 0, 1)
 ~~~
 {: .language-r}
+
+~~~
+[1] 1.036433
+~~~
+{: .output}
