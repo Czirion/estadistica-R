@@ -144,3 +144,5 @@ Para calcular $ \phi_{0.75} $ de una Normal(0,1):
 [1] 1.036433
 ~~~
 {: .output}
+
+![Forking Repositories]({{ page.root }}/fig/Cuantiles.png)
