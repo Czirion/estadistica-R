@@ -150,3 +150,5 @@ Para calcular $ \phi_{0.75} $ de una Normal(0,1):
 ## Intervalos de Confianza
 
 Un intervalo $ (L,U) $ del $ (1-\alpha)\% $ de confianza para un parámetro $ \Theta $ es aquel para el cual:
+
+$$ P\{ L \le \Theta\le U\}=1-\alpha $$ .
