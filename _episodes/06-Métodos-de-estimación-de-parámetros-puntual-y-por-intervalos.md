@@ -151,4 +151,6 @@ Para calcular $ \phi_{0.75} $ de una Normal(0,1):
 
 Un intervalo $ (L,U) $ del $ (1-\alpha)\% $ de confianza para un parámetro $ \Theta $ es aquel para el cual:
 
-$$ P\{ L \le \Theta\le U\}=1-\alpha $$ .
+$$ P\{ L \le \Theta\le U\}=1-\alpha $$ 
+
+Por ejemplo, el estimador de m ́axima verosimilitud para $ \Theta $ que se obtiene a partir de una muestra $ X_{1},...,X_{n} $ de la población $ X \sim Exponencial(\Theta) $ tiene una distribución apróximadamente normal
