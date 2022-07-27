@@ -146,3 +146,7 @@ Para calcular $ \phi_{0.75} $ de una Normal(0,1):
 {: .output}
 
 ![Forking Repositories]({{ page.root }}/fig/Cuantiles.png)
+
+## Intervalos de Confianza
+
+Un intervalo $ (L,U) $ del $ (1-\alpha)\% $ de confianza para un parámetro $ \Theta $ es aquel para el cual:
