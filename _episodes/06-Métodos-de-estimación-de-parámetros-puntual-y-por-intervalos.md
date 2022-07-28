@@ -166,3 +166,5 @@ con $ \phi_{p}=\phi_{p}(Z) $ .
 En la figura se muestran 70 intervalos de confianza de nivel 95%.
 
 ![Forking Repositories]({{ page.root }}/fig/IntConfianza.png)
+
+Los intervalos fueron calculados usando la fórmula de la transparencia anterior. Algunos de los intervalos contienen al valor del parámetro verdadero (marcado en linea negra). Un porcentaje de aproximadamente 5 % de los intervalos, no contienen al parámetro verdadero. Ver archivo `IntervaloDeConfianza.nb`.
