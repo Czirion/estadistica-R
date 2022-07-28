@@ -158,3 +158,5 @@ Por ejemplo, el estimador de máxima verosimilitud para $ \Theta $ que se obtien
 $$ \widehat{\Theta}\sim Normal(\Theta, \frac{1}{nE[\frac{d}{d\Theta}logf(X|\Theta)]^{2}}) $$
 
 Por lo tanto, un intervalo del 0.95% de confianza está dado por:
+
+$ \widehat{\Theta}+\frac{\widehat{\Theta}}{\sqrt{n}}\phi_{0.025},\widehat{\Theta}+\frac{\widehat{\Theta}}{\sqrt{n}}\phi_{0.975} $ con $ \phi_{p}=\phi_{p}(Z) $ .
