@@ -162,3 +162,7 @@ Por lo tanto, un intervalo del 0.95% de confianza está dado por:
 $$ (\widehat{\Theta}+\frac{\widehat{\Theta}}{\sqrt{n}}\phi_{0.025},\widehat{\Theta}+\frac{\widehat{\Theta}}{\sqrt{n}}\phi_{0.975}) $$
 
 con $ \phi_{p}=\phi_{p}(Z) $ .
+
+En la figura se muestran 70 intervalos de confianza de nivel 95%.
+
+![Forking Repositories]({{ page.root }}/fig/IntConfianza.png)
