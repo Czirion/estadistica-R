@@ -16,4 +16,6 @@ Tres personajes son responsables de haber desarrollado el análogo estadístico 
 
 Una prueba de hipótesis es forma de verificar una afirmación sobre la distribución de una variable aleatoria $ X $ . Se trata de ver si la información acerca de $ X $ que está contenida en una muestra $ X_{1},...,X_{n} $ , tiende a confirmar la afirmación o más bien la contradice.
 
+Consideremos un ejemplo. Sabemos que $ X \sim Normal(\mu,2) $ , en donde $ \mu\in\{0,2 \} $ . ¿Cómo podemos utilizar la información en una muestra $ X_{1},...,X_{n} $ , para decidir si la afirmación:
+
 
