@@ -9,3 +9,5 @@ objectives:
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
+
+Tres personajes son responsables de haber desarrollado el análogo estadístico al falsacionismo de Popper.
