@@ -10,4 +10,6 @@ keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
 
+![Forking Repositories]({{ page.root }}/fig/PHipotesis1.png)
+
 Tres personajes son responsables de haber desarrollado el análogo estadístico al falsacionismo de Popper.
