@@ -154,3 +154,5 @@ Un intervalo $ (L,U) $ del $ (1-\alpha)\% $ de confianza para un parámetro $ \T
 $$ P\{ L \le \Theta\le U\}=1-\alpha $$ 
 
 Por ejemplo, el estimador de máxima verosimilitud para $ \Theta $ que se obtiene a partir de una muestra $ X_{1},...,X_{n} $ de la población $ X \sim $ Exponencial $ (\Theta) $ tiene una distribución apróximadamente normal
+
+$$ \widehat{\Theta}\sim Normal(\Theta, \frac{1}{nE[\frac{d}{d\Theta}logf(X|\Theta)]^{2}}) $$
