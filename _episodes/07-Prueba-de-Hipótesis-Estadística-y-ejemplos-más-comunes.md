@@ -18,4 +18,8 @@ Una prueba de hipótesis es forma de verificar una afirmación sobre la distribu
 
 Consideremos un ejemplo. Sabemos que $ X \sim Normal(\mu,2) $ , en donde $ \mu\in\{0,2 \} $ . ¿Cómo podemos utilizar la información en una muestra $ X_{1},...,X_{n} $ , para decidir si la afirmación:
 
+$$ H_{0}: \mu = 0 $$
+
+es cierta o no?
+
 
