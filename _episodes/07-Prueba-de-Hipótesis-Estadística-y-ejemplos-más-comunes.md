@@ -38,3 +38,22 @@ Cuando el tamaño de la muestra es igual a $ n $ , entonces $ \overline{X}\sim N
 $$ 0.05 = P\{ \overline{X}\;\ge \;q\;|\;\mu=0\}= P\{\frac{\overline{X}}{2\sqrt{n}}\;\ge\;\frac{\sqrt{n}}{2}q\;|\;\mu=0\ \} = P\{Z\;\ge\;\frac{\sqrt{n}}{2}q  \} $$
 
 Por lo tanto $ q = \frac{2}{\sqrt{n}}\phi_{0.095}(Z)=\frac{3.28971}{\sqrt{n}}. $
+
+El siguiente código implementa la prueba de hipótesis que se dedujo en la transparencia anterior
+
+~~~
+> mu <- 0  #el valor de la media de la población
+> n <- 5  #el tamaño de la muestra
+> q <- 3.289707/sqrt(n) #ver ejercio anterior
+> tot <- 10  #número de veces que se aplica la prueba
+> sum <- 0 
+> for(i in 1:tot) {
+>   x <- rnorm(n, mean=mu, sd=2)
+>   x.bar <- mean(x)
+>   if(x.bar < q) {sum <- sum+1}
+> }
+> print(sum/tot) #porcentaje de error tipo I
+~~~
+{: .language-r}
+
+
