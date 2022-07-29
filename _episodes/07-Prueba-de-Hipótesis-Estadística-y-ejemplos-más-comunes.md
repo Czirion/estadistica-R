@@ -10,6 +10,8 @@ keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
 
+## Prueba de Hipótesis
+
 ![Forking Repositories]({{ page.root }}/fig/PHipotesis1.png)
 
 Tres personajes son responsables de haber desarrollado el análogo estadístico al falsacionismo de Popper.
@@ -25,3 +27,5 @@ es cierta o no?
 Note que si $ H_{0} $ es cierta, entonces $ \overline{X} $ debería estar muy cerca de 0. ¿Qué pasa si observamos que $ \overline{X} = 2 $ ? Por otro lado, ¿es el valor $ \overline{X} = 0.75 $ evidencia suficiente como para afirmar que $ H_{0} $ es falsa?
 
 
+Es natural rechazar la hipótesis $ H_{0} $ cuando $ \overline{X} $ sea grande, digamos, mayor que $ q $ . ¿Qué tan grande debe ser $ q $ para que la probabilidad
+$$ \alpha=P\{error\;tipo\; I\}= P \{rechazar\; H0 \;|\;H0 \;es \;verdadera\} $$
