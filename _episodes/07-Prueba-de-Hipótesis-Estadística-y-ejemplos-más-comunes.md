@@ -22,4 +22,6 @@ $$ H_{0}: \mu = 0 $$
 
 es cierta o no?
 
+Note que si $ H_{0} $ es cierta, entonces $ \overline{X} $ debería estar muy cerca de 0. ¿Qué pasa si observamos que $ \overline{X} = 2 $ ? Por otro lado, ¿es el valor $ \overline{X} = 0.75 $ evidencia suficiente como para afirmar que $ H_{0} $ es falsa?
+
 
