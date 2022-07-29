@@ -36,3 +36,5 @@ de equivocarnos cuando rechazamos $ H_{0} $ sea tolerable?
 Cuando el tamaño de la muestra es igual a $ n $ , entonces $ \overline{X}\sim Normal(\mu,\frac{2}{\sqrt{n}}) $ . Poniendo $ \alpha = 0.05 $ se obtiene que
 
 $$ 0.05 = P\{ \overline{X}\;\ge \;q\;|\;\mu=0\}= P\{\frac{\overline{X}}{2\sqrt{n}}\;\ge\;\frac{\sqrt{n}}{2}q\;|\;\mu=0\ \} = P\{Z\;\ge\;\frac{\sqrt{n}}{2}q  \} $$
+
+Por lo tanto $ q = \frac{2}{\sqrt{n}}\phi_{0.095}(Z)=\frac{3.28971}{\sqrt{n}}. $
