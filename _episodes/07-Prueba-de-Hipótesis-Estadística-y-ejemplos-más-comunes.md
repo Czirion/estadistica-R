@@ -56,4 +56,9 @@ El siguiente código implementa la prueba de hipótesis que se dedujo en la tran
 ~~~
 {: .language-r}
 
-Córrase este código con distintos valores para la variable `tot`. Ver el archivo `Prueba.de.Hip ́otesis.r` .
+Córrase este código con distintos valores para la variable `tot`. Ver el archivo `Prueba.de.Hipótesis.r` .
+
+### Prueba de Hipótesis: Tipos de Error
+
+Error tipo I: rechazar $ H_{0} $ cuando $ H_{0} $ correcta.
+Error tipo II: no rechazar $ H_{0} $ cuandob$ H_{0} $ incorrecta.
