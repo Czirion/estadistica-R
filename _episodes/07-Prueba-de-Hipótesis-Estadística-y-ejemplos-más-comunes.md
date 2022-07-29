@@ -32,3 +32,5 @@ Es natural rechazar la hipótesis $ H_{0} $ cuando $ \overline{X} $ sea grande, 
 $$ \alpha=P\{error\;tipo\; I\}= P \{rechazar\; H0 \;|\;H0 \;es \;verdadera\} $$
 
 de equivocarnos cuando rechazamos $ H_{0} $ sea tolerable?
+
+Cuando el tamaño de la muestra es igual a $ n $ , entonces $ \overline{X}\sim Normal(\mu,\frac{2}{\sqrt{n}}) $ . Poniendo $ \alpha = 0.05 $ se obtiene que
