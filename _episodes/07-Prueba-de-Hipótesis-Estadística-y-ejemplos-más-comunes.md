@@ -56,4 +56,4 @@ El siguiente código implementa la prueba de hipótesis que se dedujo en la tran
 ~~~
 {: .language-r}
 
-
+Córrase este código con distintos valores para la variable `tot`. Ver el archivo `Prueba.de.Hip ́otesis.r` .
