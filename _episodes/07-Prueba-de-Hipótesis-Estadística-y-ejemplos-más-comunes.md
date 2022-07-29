@@ -28,4 +28,5 @@ Note que si $ H_{0} $ es cierta, entonces $ \overline{X} $ debería estar muy ce
 
 
 Es natural rechazar la hipótesis $ H_{0} $ cuando $ \overline{X} $ sea grande, digamos, mayor que $ q $ . ¿Qué tan grande debe ser $ q $ para que la probabilidad
+
 $$ \alpha=P\{error\;tipo\; I\}= P \{rechazar\; H0 \;|\;H0 \;es \;verdadera\} $$
