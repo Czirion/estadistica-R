@@ -62,3 +62,5 @@ Córrase este código con distintos valores para la variable `tot`. Ver el archi
 
 Error tipo I: rechazar $ H_{0} $ cuando $ H_{0} $ correcta.
 Error tipo II: no rechazar $ H_{0} $ cuandob$ H_{0} $ incorrecta.
+
+![Forking Repositories]({{ page.root }}/fig/PHipotesis2.png)
