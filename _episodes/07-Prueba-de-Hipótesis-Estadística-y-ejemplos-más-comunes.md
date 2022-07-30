@@ -83,3 +83,5 @@ $$  X \sim Normal(\mu_{x},\sigma_{x}^{2}) \; y \; Y \sim Normal(\mu_{y},\sigma_{
 Estamos interesados en probar la hipótesis:
 
 $$ H_{0}: \mu_{x}-\mu_{y}=\Delta_{0} \; conta \; H_{1}: \mu_{x}-\mu_{y}\neq \Delta_{0} $$
+
+Sean $ X_{1},...,X_{n_{x}} $ y $ Y_{1},...,Y_{n_{y}} $ muestras de las poblaciones $ X $ y $ Y $ . Es estadístico de prueba es:
