@@ -70,6 +70,12 @@ Error tipo II: no rechazar $ H_{0} $ cuandob$ H_{0} $ incorrecta.
 
 El falsacionismo, o principio de falsabilidad, es una corriente epistemológica fundada por Karl Popper (1902-1994). Para Popper, contrastar una teoría significa
 intentar refutarla mediante un contraejemplo. Si no es posible refutarla, dicha teoría queda corroborada, pudiendo ser aceptada provisionalmente, pero no verificada;
-es decir, ninguna teoría es absolutamente verdadera, sino a lo sumo se mantiene como <<no refutada>>. El falsacionismo es uno de los pilares del método científico.
+es decir, ninguna teoría es absolutamente verdadera, sino a lo sumo se mantiene como ***no refutada***. El falsacionismo es uno de los pilares del método científico.
  
 ![Forking Repositories]({{ page.root }}/fig/karlpopper.png)
+  
+### Prueba de hipótesis para la diferencia de medias.
+
+Suponga que tenemos dos poblaciones:
+
+$  X \sim Normal(\mu_{x},\sigma_{x}^{2}) $ y $ Y \sim Normal(\mu_{y},\sigma_{y}^{2}) $
