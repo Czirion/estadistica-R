@@ -88,6 +88,15 @@ Sean $ X_{1},...,X_{n_{x}} $ y $ Y_{1},...,Y_{n_{y}} $ muestras de las poblacion
 
 $ T_{0}=\frac{\overline{X}-\overline{Y}-\Delta_{0}}{\sqrt[s_{p}]{\frac{1}{n_{x}}+\frac{1}{n_{y}}}} $  en donde  $ s_{p}^{2}= \frac{(n_{x}-1) + (n_{y}-1)s_{y}^{2}}{n_{x}-n_{y}-2} $ y $ s_{x}^{2}= \frac{1}{n_{x}-1}\sum_{i=1}^{n_{x}}(X_{i}-\overline{X})^{2} $  el estimador de la varianza  $ \sigma_{x}^{2} $ .
 
-Es claro que valores de $ |T_{0}| $ pequeños son congruentes con la hipótesis $ H_{0} $ . ¿Qué tan grande debe ser $ |T_{0}| $ para poder rechazar $ H_{0} $ ? Puesto que la distribución del estadístico de prueba es conocida (distribución T de Student) entonces es posible calcular el valor $ q $ tal que $ H_{0} $ se rechaza siempre que $ |T_{0}| \gt  q $ con una probabilidad de error tipo I prefijada.
+Es claro que valores de $ T_{0} $ pequeños son congruentes con la hipótesis $ H_{0} $ . ¿Qué tan grande debe ser $ T_{0} $ para poder rechazar $ H_{0} $ ? Puesto que la distribución del estadístico de prueba es conocida (distribución T de Student) entonces es posible calcular el valor $ q $ tal que $ H_{0} $ se rechaza siempre que $ T_{0} \gt  q $ con una probabilidad de error tipo I prefijada.
 
+
+El comando:
+
+~~~
+> t.test(x, y, mu=0.0)
+~~~
+{: .language-r}
+
+Realiza la prueba de la hipótesis $ H_{0} $ en donde  $ mu = \Delta_{0} $ . Como resultado de ejecutar este comando se obtendrá el así llamado p-valor.
 
