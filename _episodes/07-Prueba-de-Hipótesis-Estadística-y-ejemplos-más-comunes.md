@@ -86,4 +86,4 @@ $$ H_{0}: \mu_{x}-\mu_{y}=\Delta_{0} \; conta \; H_{1}: \mu_{x}-\mu_{y}\neq \Del
 
 Sean $ X_{1},...,X_{n_{x}} $ y $ Y_{1},...,Y_{n_{y}} $ muestras de las poblaciones $ X $ y $ Y $ . Es estadístico de prueba es:
 
-$ T_{0}=\frac{\overline{X}-\overline{Y}-\Delta_{0}}{\sqrt[s_{p}]{\frac{1}{n_{x}}+\frac{1}{n_{y}}}} $ en donde $ s_{p}^{2}= \frac{(n_{x}-1) + (n_{y}-1)s_{y}^{2}}{n_{x}-n_{y}-2} $
+$ T_{0}=\frac{\overline{X}-\overline{Y}-\Delta_{0}}{\sqrt[s_{p}]{\frac{1}{n_{x}}+\frac{1}{n_{y}}}} $  en donde  $ s_{p}^{2}= \frac{(n_{x}-1) + (n_{y}-1)s_{y}^{2}}{n_{x}-n_{y}-2} $ y $ s_{x}^{2}= \frac{1}{n_{x}-1}\sum_{i=1}^{n_{x}}(X_{i}-\overline{X})^{2} $  el estimador de la varianza  $ \sigma_{x}^{2} $ .
