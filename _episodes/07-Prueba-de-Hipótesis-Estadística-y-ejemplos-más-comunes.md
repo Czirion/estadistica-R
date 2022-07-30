@@ -78,4 +78,8 @@ es decir, ninguna teoría es absolutamente verdadera, sino a lo sumo se mantiene
 
 Suponga que tenemos dos poblaciones:
 
-$  X \sim Normal(\mu_{x},\sigma_{x}^{2}) $ y $ Y \sim Normal(\mu_{y},\sigma_{y}^{2}) $
+$$  X \sim Normal(\mu_{x},\sigma_{x}^{2}) \; y \; Y \sim Normal(\mu_{y},\sigma_{y}^{2}) $$
+
+Estamos interesados en probar la hipótesis:
+
+$$ H_{0}: \mu_{x}-\mu_{y}=\Delta_{0} \; conta \; H_{1}: \mu_{x}-\mu_{y}\neq \Delta_{0} $$
