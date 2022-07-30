@@ -85,3 +85,5 @@ Estamos interesados en probar la hipótesis:
 $$ H_{0}: \mu_{x}-\mu_{y}=\Delta_{0} \; conta \; H_{1}: \mu_{x}-\mu_{y}\neq \Delta_{0} $$
 
 Sean $ X_{1},...,X_{n_{x}} $ y $ Y_{1},...,Y_{n_{y}} $ muestras de las poblaciones $ X $ y $ Y $ . Es estadístico de prueba es:
+
+$ T_{0}=\frac{\overline{X}-\overline{Y}-\Delta_{0}}{\sqrt[Sp]{\frac{1}{n_{x}}+\frac{1}{n_{y}}}} $ en donde 
