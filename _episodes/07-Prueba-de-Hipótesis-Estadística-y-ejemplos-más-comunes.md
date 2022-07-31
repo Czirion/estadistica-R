@@ -115,3 +115,25 @@ El p-valor es la probabilidad de que se observe un valor del estadístico de pru
 Por lo tanto, p-valores pequeños deben interpretarse como evidencia en contra de $ H_{0} $ .
 
 Como ayuda para asimilar el concepto de p-valor, se puede correr el código en el archivo `Prueba.T.de.Student.r` con distintos para las medias de $ X $ y $ Y $ .
+
+Tamaño de la muestra de $ X $ :
+
+~~~
+> nx <- 100
+~~~
+{: .language-r}
+
+Tamaño de la muestra de $ Y $ :
+
+~~~
+> ny <- 50
+~~~
+{: .language-r}
+
+Desviación estándar común de las dos poblaciones:
+
+~~~
+> desviacion <- 1
+~~~
+{: .language-r}
+
