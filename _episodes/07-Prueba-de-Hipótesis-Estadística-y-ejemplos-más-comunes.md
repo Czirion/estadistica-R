@@ -105,3 +105,5 @@ Realiza la prueba de la hipótesis $ H_{0} $ en donde  $ mu = \Delta_{0} $ . Com
 William Sealy Gosset (1876-1937) fue un estadístico, mejor conocido por su sobrenombre literario Student. Estudió química y matemática en el New College de Oxford. Tras graduarse en 1899, se incorporó a las destilerías Guinness en Dublín. Guinness era un negocio agroquímico y ahí Gosset pudo aplicar sus conocimientos estadísticos tanto a la destilería como a la granja para seleccionar las mejores variedades de cebada.
 
 ![Forking Repositories]({{ page.root }}/fig/WilliamSealyGosset.png)
+
+Gosset introdujo la distribución T de Student para realizar la prueba de diferencia de medias.
