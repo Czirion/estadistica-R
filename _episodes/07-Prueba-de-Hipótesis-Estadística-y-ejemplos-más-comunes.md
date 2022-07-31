@@ -109,3 +109,9 @@ William Sealy Gosset (1876-1937) fue un estadístico, mejor conocido por su sobr
 Gosset introdujo la distribución T de Student para realizar la prueba de diferencia de medias.
 
 $$ T(k)=\frac{Z}{\frac{Ji^{2}(k)}{k}} $$
+
+El p-valor es la probabilidad de que se observe un valor del estadístico de prueba como el que se ha observado al realizar el experimento, bajo el supuesto de que $ H_{0} $ es cierta.
+
+Por lo tanto, p-valores pequeños deben interpretarse como evidencia en contra de $ H_{0} $ .
+
+Como ayuda para asimilar el concepto de p-valor, se puede correr el código en el archivo `Prueba.T.de.Student.r` con distintos para las medias de $ X $ y $ Y $ .
