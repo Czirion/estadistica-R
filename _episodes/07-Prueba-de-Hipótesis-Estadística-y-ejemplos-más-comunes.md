@@ -107,3 +107,5 @@ William Sealy Gosset (1876-1937) fue un estadístico, mejor conocido por su sobr
 ![Forking Repositories]({{ page.root }}/fig/WilliamSealyGosset.png)
 
 Gosset introdujo la distribución T de Student para realizar la prueba de diferencia de medias.
+
+$$ T(k)=\frac{Z}{\frac{Ji^{2}(k)}{k}} $$
