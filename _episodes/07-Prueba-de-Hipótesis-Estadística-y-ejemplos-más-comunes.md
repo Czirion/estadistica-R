@@ -110,6 +110,8 @@ Gosset introdujo la distribución T de Student para realizar la prueba de difere
 
 $$ T(k)=\frac{Z}{\frac{Ji^{2}(k)}{k}} $$
 
+## El p-valor de una prueba de hipótesis
+
 El p-valor es la probabilidad de que se observe un valor del estadístico de prueba como el que se ha observado al realizar el experimento, bajo el supuesto de que $ H_{0} $ es cierta.
 
 Por lo tanto, p-valores pequeños deben interpretarse como evidencia en contra de $ H_{0} $ .
@@ -134,6 +136,14 @@ Desviación estándar común de las dos poblaciones:
 
 ~~~
 > desviacion <- 1
+> x <- rnorm(nx, 0.0, sigma)
+> y <- rnorm(ny, 0.5, sigma)
 ~~~
 {: .language-r}
 
+Prueba de la hipótesis $ H_{0}: \mu_{x}= \mu_{y} $ :
+
+~~~
+> t.test(x, y, mu=0)
+~~~
+{: .language-r}
