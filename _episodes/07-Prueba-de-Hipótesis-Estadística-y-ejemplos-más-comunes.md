@@ -147,3 +147,8 @@ Prueba de la hipótesis $ H_{0}: \mu_{x}= \mu_{y} $ :
 > t.test(x, y, mu=0)
 ~~~
 {: .language-r}
+
+### Aplicación al consumo de energía eléctrica 
+
+En la figura se muestran dos histogramas sobrepuestos. El histograma en color rojo representa el consumo personal diario de energía eléctrica durante los meses de verano, y en verde, en consumo en los meses de invierno. Se aplicó la prueba T de Student para contrastar la hipótesis nula según cual no existe diferencia en los consumos, y se observó un p-valor igual a 0.02701, con lo cual podemos rechazar esta hipótesis. Ver el archivo `Consumo.Electricidad.r`.
+
