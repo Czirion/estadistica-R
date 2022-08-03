@@ -156,3 +156,8 @@ En la figura se muestran dos histogramas sobrepuestos. El histograma en color ro
 
 Se aplicó la prueba T de Student para contrastar la hipótesis nula según cual no existe diferencia en los consumos, y se observó un p-valor igual a 0.02701, con lo cual podemos rechazar esta hipótesis. Ver el archivo `Consumo.Electricidad.r`.
 
+## Prueba para la igualdad de dos varianzas
+Sean $ \sigma_{1}^{2} $ y $ \sigma_{2}^{2} $ las varianzas de dos poblaciones normales e independientes. Para probar la hipótesis:
+
+$$ H_{0}:\sigma_{1}^{2}=\sigma_{2}^{2} $$
+
