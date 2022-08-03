@@ -169,3 +169,9 @@ se usa el comando `var.test` cuyos dos primeros argumentos son dos vectores numÃ
 > var.test(x, y)
 ~~~
 {: .language-r}
+
+F test to compare two variances data: x and y
+
+$ F = 0.28962 $ , $ num df = 49 $, $ denom df = 49 $ , $ p-value = 2.808e-05 $
+
+alternative hypothesis: true ratio of variances is not equal to 1
