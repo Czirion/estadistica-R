@@ -162,3 +162,10 @@ Sean $ \sigma_{1}^{2} $ y $ \sigma_{2}^{2} $ las varianzas de dos poblaciones no
 $$ H_{0}:\sigma_{1}^{2}=\sigma_{2}^{2} $$
 
 se usa el comando `var.test` cuyos dos primeros argumentos son dos vectores numéricos que contienen los datos de cada muestra.
+
+~~~
+> x <- rnorm(50, mean=0, sd=1)
+> y <- rnorm(50, mean=0, sd=2)
+> var.test(x, y)
+~~~
+{: .language-r}
