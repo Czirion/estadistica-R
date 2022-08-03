@@ -175,3 +175,9 @@ F test to compare two variances data: x and y
 $ F = 0.28962 $ , $ num df = 49 $, $ denom df = 49 $ , $ p-value = 2.808e-05 $
 
 alternative hypothesis: true ratio of variances is not equal to 1
+
+> ## `Nota`
+> Ver la página siguiente para más detalles de este comando.
+> [var.test: F Test to Compare Two Variances.](www.rdocumentation.org/packages/stats/versions/3.5.1/topics/var.test)
+{: .callout}
+
