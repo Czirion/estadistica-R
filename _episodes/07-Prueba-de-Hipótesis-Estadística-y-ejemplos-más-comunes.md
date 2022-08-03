@@ -161,3 +161,4 @@ Sean $ \sigma_{1}^{2} $ y $ \sigma_{2}^{2} $ las varianzas de dos poblaciones no
 
 $$ H_{0}:\sigma_{1}^{2}=\sigma_{2}^{2} $$
 
+se usa el comando `var.test` cuyos dos primeros argumentos son dos vectores numéricos que contienen los datos de cada muestra.
