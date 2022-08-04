@@ -196,3 +196,17 @@ Definimos la relaci ́on entre $ x, y $ :
 > cor.test(x, y, method="pearson") #otro método: spearman
 ~~~
 {: .language-r}
+
+Pearson’s product-moment correlation data: x and y
+
+t = 6.0949, df = 8, p-value = 0.0002911
+
+alternative hypothesis: true correlation is not equal to 0
+
+95 percent confidence interval:
+0.6469479 0.9780966
+
+sample estimates: 
+cor 0.907086
+
+
