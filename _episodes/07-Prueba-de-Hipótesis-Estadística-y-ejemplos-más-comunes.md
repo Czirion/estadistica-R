@@ -185,3 +185,14 @@ alternative hypothesis: true ratio of variances is not equal to 1
 ## Prueba de significancia para la correlación
 
 El comando `cor.test(x, y)` nos permite probar la hipótesis nula de que los vectores $ x, y $ no están correlacionados.
+
+Definimos la relaci ́on entre $ x, y $ : 
+
+~~~
+> recta <- function(x) 1+5∗x 
+> set.seed(415)
+> x <- c(1:10)
+> y <- recta(x)+rnorm(10, 0, 5)
+> cor.test(x, y, method="pearson") #otro método: spearman
+~~~
+{: .language-r}
