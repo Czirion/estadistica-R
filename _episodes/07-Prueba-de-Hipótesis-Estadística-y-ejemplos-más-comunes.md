@@ -182,3 +182,6 @@ alternative hypothesis: true ratio of variances is not equal to 1
 > [var.test: F Test to Compare Two Variances.](www.rdocumentation.org/packages/stats/versions/3.5.1/topics/var.test)
 {: .callout}
 
+## Prueba de significancia para la correlación
+
+El comando `cor.test(x, y)` nos permite probar la hipótesis nula de que los vectores $ x, y $ no están correlacionados.
