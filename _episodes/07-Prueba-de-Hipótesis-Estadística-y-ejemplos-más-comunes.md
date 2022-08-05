@@ -215,4 +215,4 @@ Dada una muestra $ X_{1},...,X_{n} $ , tomada de una población $ X $ , nos inte
 
 $$ H_{0}: X\;tiene\;una\;distribución\;F(x) $$
 
-
+El comando `ks.test` nos permite realizar la prueba de bondad de ajuste de Kolmogorov y Smirnov. He aquí algunos ejemplos.
