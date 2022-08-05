@@ -243,6 +243,13 @@ Aquí se puede usar la prueba de Kolmogorov-Smirnov para evaluar el ajuste de lo
 
 Suponga que una variable $ X $ tiene una función de distribución de masa de probabilidad (dmp) dada por la siguiente tabla.
 
-| $ j $      | 1         | 2         | 3         | 4         | 5         |
-|------------|-----------|-----------|-----------|-----------|-----------|
-| $ P{X=j} $ | $ p_{1} $ | $ p_{2} $ | $ p_{3} $ | $ p_{4} $ | $ p_{5} $ |
+| $ j $         | 1         | 2         | 3         | 4         | 5         |
+|---------------|-----------|-----------|-----------|-----------|-----------|
+| $ P \{X=j\} $ | $ p_{1} $ | $ p_{2} $ | $ p_{3} $ | $ p_{4} $ | $ p_{5} $ |
+
+Dada una muestra de la cual sospechamos que fue tomada de la distribución `dmp`, con el comando:
+
+~~~
+> chisq.test(muestra, p=dmp)
+~~~
+{: .language-r}
