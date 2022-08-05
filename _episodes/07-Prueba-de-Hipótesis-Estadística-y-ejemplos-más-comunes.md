@@ -209,4 +209,10 @@ alternative hypothesis: true correlation is not equal to 0
 sample estimates: 
 cor 0.907086
 
+## La prueba de bondad de ajuste de Kolmogorov-Smirnov
+
+Dada una muestra $ X_{1},...,X_{n} $ , tomada de una población $ X $ , nos interesa probar la siguiente hipótesis:
+
+$$ H_{0}: X\;tiene\;una\;distribución\;F(x) $$
+
 
