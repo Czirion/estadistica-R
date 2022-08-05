@@ -229,8 +229,10 @@ El comando `ks.test` nos permite realizar la prueba de bondad de ajuste de Kolmo
 ~~~
 {: .language-r}
 
-Si el p-valor obtenido es peque ̃no, entonces no es creíble que la muestra haya sido generada por la distribución $ F(x) $ .
+Si el p-valor obtenido es pequeño, entonces no es creíble que la muestra haya sido generada por la distribución $ F(x) $ .
 
 ## La transformación Box-Cox
 
 Cuando un conjunto de datos no se distribuye normalmente, entonces es posible transformarlos de manera que los datos transformados sí se distribuyan normalmente. En el lado derecho tenemos una muestra de una población gamma. En el lado derecho tenemos la misma muestra despu ́es de que se aplicó la transformación Box-Cox. Ver el archivo `Box.Cox.r`.
+
+![Forking Repositories]({{ page.root }}/fig/BoxCox.png)
