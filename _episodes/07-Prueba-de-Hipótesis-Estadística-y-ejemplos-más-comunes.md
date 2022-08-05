@@ -238,3 +238,7 @@ Cuando un conjunto de datos no se distribuye normalmente, entonces es posible tr
 ![Forking Repositories]({{ page.root }}/fig/BoxCox.png)
 
 Aquí se puede usar la prueba de Kolmogorov-Smirnov para evaluar el ajuste de los datos transformados a la distribución normal.
+
+## La prueba Ji cuadrada de bondad de ajuste
+
+Suponga que una variable $ X $ tiene una función de distribución de masa de probabilidad (dmp) dada por la siguiente tabla.
