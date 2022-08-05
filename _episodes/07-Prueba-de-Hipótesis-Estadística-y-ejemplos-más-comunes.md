@@ -236,3 +236,5 @@ Si el p-valor obtenido es pequeño, entonces no es creíble que la muestra haya 
 Cuando un conjunto de datos no se distribuye normalmente, entonces es posible transformarlos de manera que los datos transformados sí se distribuyan normalmente. En el lado derecho tenemos una muestra de una población gamma. En el lado derecho tenemos la misma muestra despu ́es de que se aplicó la transformación Box-Cox. Ver el archivo `Box.Cox.r`.
 
 ![Forking Repositories]({{ page.root }}/fig/BoxCox.png)
+
+Aquí se puede usar la prueba de Kolmogorov-Smirnov para evaluar el ajuste de los datos transformados a la distribución normal.
