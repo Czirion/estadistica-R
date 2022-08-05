@@ -216,3 +216,15 @@ Dada una muestra $ X_{1},...,X_{n} $ , tomada de una población $ X $ , nos inte
 $$ H_{0}: X\;tiene\;una\;distribución\;F(x) $$
 
 El comando `ks.test` nos permite realizar la prueba de bondad de ajuste de Kolmogorov y Smirnov. He aquí algunos ejemplos.
+
+~~~
+> y <- rnorm(20, mean=0, sd=5)
+> ks.test(y, “pnorm”, mean=0, sd=3)
+~~~
+{: .language-r}
+
+~~~
+> y <- rchisq(50, df=5)
+> ks.test(y, “pchisq”, df=2)
+~~~
+{: .language-r}
