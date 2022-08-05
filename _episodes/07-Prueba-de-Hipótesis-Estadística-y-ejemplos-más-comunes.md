@@ -253,3 +253,5 @@ Dada una muestra de la cual sospechamos que fue tomada de la distribución `dmp`
 > chisq.test(muestra, p=dmp)
 ~~~
 {: .language-r}
+
+Se obtiene el p valor para la prueba de la hipótesis nula $ H_{0} $ que afirma que la muestra fue tomada de la población $ X $ . Ver el archivo `Ji.Cuadrada.r`.
