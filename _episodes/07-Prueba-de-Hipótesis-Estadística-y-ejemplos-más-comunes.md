@@ -219,12 +219,14 @@ El comando `ks.test` nos permite realizar la prueba de bondad de ajuste de Kolmo
 
 ~~~
 > y <- rnorm(20, mean=0, sd=5)
-> ks.test(y, “pnorm”, mean=0, sd=3)
+> ks.test(y, "pnorm", mean=0, sd=3)
 ~~~
 {: .language-r}
 
 ~~~
 > y <- rchisq(50, df=5)
-> ks.test(y, “pchisq”, df=2)
+> ks.test(y, "pchisq", df=2)
 ~~~
 {: .language-r}
+
+Si el p-valor obtenido es peque ̃no, entonces no es creíble que la muestra haya sido generada por la distribución $ F(x) $ .
