@@ -13,7 +13,7 @@ keypoints:
 
 ## Comandos básicos
 
-El lenguaje R es sensible a las may ́usculas: no es lo mismo `variable1` que `Variable1`.
+El lenguaje R es sensible a las mayúsculas: no es lo mismo `variable1` que `Variable1`.
 
 Para interrumpir un cálculo extenso, oprimir `Esc`.
 
@@ -24,7 +24,7 @@ Para salir de R:
 ~~~
 {: .language-r}
 
-Asigna el valor "5" a la variable x:
+Asigna el valor "5" a la variable $ x $ :
 
 ~~~
     > x<-5
@@ -38,7 +38,7 @@ Da la lista de las variables, u objetos, definidos por el usuario:
 ~~~
 {: .language-r}
 
-Elimina la variable x:
+Elimina la variable $ x $ :
 
 ~~~
     > rm("x") 
@@ -114,7 +114,7 @@ Para ejecutar el archivo `Sumar.r` se usa el comando:
 
 ## Ambiente de Cálculo
 
-Define el vector y:
+Define el vector $ y $ :
 
 ~~~
     > y <-c(1, 2, 3, 4, 5, 6, 7, 8, 9)
@@ -129,7 +129,7 @@ Y despliega lo siguiente:
 ~~~
 {: .output}
 
-Define la matriz de 3x3:
+Define la matriz de $ 3x3 $ :
 
 ~~~
     > m <-matrix(y, 3, 3) 
@@ -145,7 +145,7 @@ Define la matriz de 3x3:
 ~~~
 {: .output}
 
-Define la matriz u de 3x1
+Define la matriz $ u $ de $ 3x1 $
 ~~~
     > u<-matrix(1, 3, 1)
     > u
@@ -160,7 +160,7 @@ Define la matriz u de 3x1
 ~~~
 {: .output}
 
-Calcula la media de las entradas en el vector y:
+Calcula la media de las entradas en el vector $ y $ :
 
 ~~~
     > mean(y)
@@ -171,26 +171,26 @@ En la siguiente tabla se reportan los comandos para calcular otros estadísticos
 
 |-------------------|--------------------------------------------------------|
 |      Comando      |                         Función                        |
-|:-----------------:+:------------------------------------------------------:|
-|    `length(y)`    |            Número de entradas en el vector y           |
 |-------------------|--------------------------------------------------------|
-|      `sum(y)`     |                Suma de las entradas de y               |
+|    `length(y)`    |           Número de entradas en el vector $ y $        |
+|-------------------|--------------------------------------------------------|
+|      `sum(y)`     |                Suma de las entradas de $ y $           |
 |-------------------|--------------------------------------------------------|
 |      `sort(y)`    |                  Ordena de menor a mayor               |
 |-------------------|--------------------------------------------------------|
-|  `min(y), max(y)` |            Obtiene el mínimo y el máximo de y          |
+|  `min(y), max(y)` |           Obtiene el mínimo y el máximo de $ y $       |
 |-------------------|--------------------------------------------------------|
-|     `mean(y)`     |                     Media del vector y                 |
+|     `mean(y)`     |                    Media del vector $ y $              |
 |-------------------|--------------------------------------------------------|
-|    `median(y)`    |                    Mediana del vector y                |
+|    `median(y)`    |                  Mediana del vector $ y $              |
 |-------------------|--------------------------------------------------------|
-|      `sd(y)`      |             Desviación estándar del vector y           |
+|      `sd(y)`      |           Desviación estándar del vector  $ y $        |
 |-------------------|--------------------------------------------------------|
-|      `var(y)`     |                  Varianza del vector y                 |
+|      `var(y)`     |                Varianza del vector  $ y $              |
 |-------------------|--------------------------------------------------------|
-|     `cor(x, y)`   |                  Correlación entre x, y                |
+|     `cor(x, y)`   |                Correlación entre $ x, y $              |
 |-------------------|--------------------------------------------------------|
-|    `cov(x, y)`    |                   Covarianza entre x, y                |
+|    `cov(x, y)`    |                Covarianza entre  $ x, y $              |
 |-------------------|--------------------------------------------------------|
 
 En la siguiente tabla se reportan algunas operaciones matemáticas.
@@ -200,21 +200,21 @@ En la siguiente tabla se reportan algunas operaciones matemáticas.
 |-------------------|--------------------------|-----------------------------|-----------------------------|
 |        `+`        |           Suma           |          `trunc(x)`         |      Elimina decimales      |
 |-------------------|--------------------------|-----------------------------|-----------------------------|
-|        `-`        |           Resta          |     `round(x, digits=0)`    |          Redondea x         |
+|        `-`        |           Resta          |     `round(x, digits=0)`    |       Redondea  $ x $       |
 |-------------------|--------------------------|-----------------------------|-----------------------------|
-|        `*`        |      Multiplicación      |     `round(x, digits=3)`    |          Redondea x         |
+|        `*`        |      Multiplicación      |     `round(x, digits=3)`    |       Redondea  $ x $       |
 |-------------------+--------------------------|-----------------------------|-----------------------------|
 |        `/`        |          División        |           `log(x)`          |      Logaritmo natural      |
 |-------------------+--------------------------|-----------------------------|-----------------------------|
-|      `x%%y`       |        x módulo y        |       `log(x, base=2)`      |         log base 2          |
+|      `x%%y`       |  $  x $ módulo $ y $     |       `log(x, base=2)`      |         log base 2          |
 |-------------------+--------------------------|-----------------------------|-----------------------------|
-|      `abs(x)`     |      Valor absoluto      |         `log10(x)`          |    Logaritmo base 10 de x   |
+|      `abs(x)`     |      Valor absoluto      |         `log10(x)`          | Logaritmo base 10 de $ x $  |
 |-------------------+--------------------------|-----------------------------|-----------------------------|
-|     `sqrt(x)`     |       Raíz cuadrada      |           `exp(x)`          |       Exponencial de x      |
+|     `sqrt(x)`     |       Raíz cuadrada      |           `exp(x)`          |     Exponencial de $ x $    |
 |-------------------+--------------------------|-----------------------------|-----------------------------|
 |    `ceiling(x)`   |      Función techo       |           `% * %`           |     Multiplica matrices     |
 |-------------------+--------------------------|-----------------------------|-----------------------------|
-|     `floor(x)`    |       Función piso       |            `n:m`            |     Genera n, n+1, ..., m   |
+|     `floor(x)`    |       Función piso       |            `n:m`            |  Genera $ n, n+1, ..., m $  |
 |-------------------|--------------------------|-----------------------------|-----------------------------|
 
 ### Ejemplos
@@ -243,7 +243,7 @@ Da como resultado:
 ~~~
 {: .output}
 
-Si x es un vector, entonces x[i] es la i-ésima entrada de x.  Por ejemplo:
+Si $ x  $ es un vector, entonces $ x[i] $ es la i-ésima entrada de $ x $ .  Por ejemplo:
 
 ~~~
     > x <-c(4, 6, 2, 4, 8, 9, 1, 5)
@@ -326,7 +326,7 @@ Sirve para definir el tamaño de los caracteres de las gráficas. `xlab` y `ylab
 ~~~
 {: .language-r}
 
-`lty` y `lwd` cambian el tipo de línea y el grueso de la línea respectivamente. “lines” sirve para a ̃nadir a la gráfica una curva a trazo continuo.
+`lty` y `lwd` cambian el tipo de línea y el grueso de la línea respectivamente. `lines` sirve para a ̃nadir a la gráfica una curva a trazo continuo.
 
 ~~~
     >plot(x, y, lwd=3)
@@ -363,14 +363,14 @@ Sirve para definir el tamaño de los caracteres de las gráficas. `xlab` y `ylab
 ~~~
 {: .language-r}
 
-`xlim` y `ylim` especifica el rango en el eje de la x y en el eje de las y, respectivamente.
+`xlim` y `ylim` especifica el rango en el eje de la $ x  $ y en el eje de las $ y $ , respectivamente.
 
 ~~~
     >plot(x, y, ylim=c(-10, 110), xlim=c(-1, 12))
 ~~~
 {: .language-r}
 
-`text` sirve para a ̃nadir texto a la gráfica.
+`text` sirve para añadir texto a la gráfica.
 
 ~~~
     >text(4, 20, "(4, 16)")
@@ -503,7 +503,7 @@ Da como resultado:
 ~~~
 {: .output}
 
-La siguiente instrucción sirve para calcular la probabilidad de que una variable aleatoria X ∼ Binomial(10, 5) sea igual a 7.
+La siguiente instrucción sirve para calcular la probabilidad de que una variable aleatoria $ X \sim  Binomial(10, 5) $ sea igual a 7.
 ~~~
     > dbinom(7, size=10, prob=0.5)
 ~~~
@@ -518,7 +518,7 @@ La siguiente instrucción sirve para calcular la probabilidad de que una variabl
 > R reconoce a `dbinom` como a una función de densidad, aún cuando en sentido estricto se trata de una función de distribución de masa.
 {: .callout}
 
-Con la siguiente instrucción se calcula la probabilidad de que X ∼ Binomial(10, 5) sea menor o igual a 7.
+Con la siguiente instrucción se calcula la probabilidad de que X \sim  Binomial(10, 5) sea menor o igual a 7.
 ~~~
     > pbinom(7, size=10, prob=0.5)
 ~~~
@@ -551,7 +551,7 @@ El archivo `Histograma.Normal.r` contiene los comandos necesarios para generar l
 
 <img src="https://raw.githubusercontent.com/Czirion/estadistica-R/gh-pages/fig/Histograma1.png">
 
-En particular, el comando `hist(x)` genera el histograma de los datos n en el vector x.
+En particular, el comando `hist(x)` genera el histograma de los datos $ n $ en el vector $ x $ .
 ~~~
    dev.new(width=6, height=5)
    par(cex=1.5)
@@ -565,5 +565,5 @@ En particular, el comando `hist(x)` genera el histograma de los datos n en el ve
 
 ## Ley de los Grandes Números
 En el histograma anterior, el tamaño de la muestra fue de 1500.
-Por la ley de los grandes n ́umeros, cuando el tama ̃no de la muestra se incrementa, entonces el histograma tiende a coincidir con más exactitud con la función de densidad de la que se tomó la muestra.
+Por la ley de los grandes números, cuando el tama ̃no de la muestra se incrementa, entonces el histograma tiende a coincidir con más exactitud con la función de densidad de la que se tomó la muestra.
 
