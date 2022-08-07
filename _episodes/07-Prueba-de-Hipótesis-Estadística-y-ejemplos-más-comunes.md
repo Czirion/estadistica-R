@@ -258,7 +258,7 @@ Se obtiene el p valor para la prueba de la hipótesis nula $ H_{0} $ que afirma 
 
 Ver el archivo `Ji.Cuadrada.r`.
 
-## La prueba X^{2} de bondad de ajuste
+## La prueba $ X^{2} $ de bondad de ajuste
 
 En el siglo XIX, se aplicaron m ́etodos estad ́ısticos a datos biológicos. Los investigadores supon ́ıan que los datos seguían una distribución normal. Pero, en 1900, Karl Pearson criticó este supuesto y observó que los histogramas obtenidos presentaban una asimetría (skewness).
 
