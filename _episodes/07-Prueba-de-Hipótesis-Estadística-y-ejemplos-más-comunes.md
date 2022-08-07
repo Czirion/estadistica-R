@@ -263,3 +263,5 @@ Ver el archivo `Ji.Cuadrada.r`.
 En el siglo XIX, se aplicaron m ́etodos estad ́ısticos a datos biológicos. Los investigadores supon ́ıan que los datos seguían una distribución normal. Pero, en 1900, Karl Pearson criticó este supuesto y observó que los histogramas obtenidos presentaban una asimetría (skewness).
 
 En una serie de artículos entre 1893 y 1916, Pearson introdujo una familia de distribuciones, de la cual, la distribución normal era un caso particular. Pearson introdujo la prueba Ji cuadrada para mostrar que las muestras obtenidas no no podían provenir de una distribución normal.
+
+![Forking Repositories]({{ page.root }}/fig/PBondadAjuste.png)
