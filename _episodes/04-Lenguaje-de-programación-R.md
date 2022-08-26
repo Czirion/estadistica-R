@@ -20,21 +20,21 @@ Para interrumpir un cálculo extenso, oprimir `Esc`.
 Para salir de R:
 
 ~~~
-    > q()
+  q()
 ~~~
 {: .language-r}
 
 Asigna el valor "5" a la variable $ x $ :
 
 ~~~
-    > x<-5
+  x<-5
 ~~~
 {: .language-r}
 
 Da la lista de las variables, u objetos, definidos por el usuario:
 
 ~~~
-    > ls()
+  ls()
 ~~~
 {: .language-r}
 
