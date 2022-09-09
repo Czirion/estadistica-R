@@ -114,17 +114,17 @@ La distribución logarítmica tiene distribución de masa y media dadas respecti
 Desafortunadamente no es posible resolver la ecuación $ M_{1}(p) = m_{1} $ para obtener $ \widehat{p} $ en función de $ m_{1} $ . Sin embargo, esta ecuación se puede resolver numéricamente. Para este fin, se define la siguiente función.
 
 ~~~
-> fun <- function(p) {
->   a <- (1-p)∗log(1-p)
->   return(-p/a-m1)
-> }
+fun <- function(p) {
+  a <- (1-p)∗log(1-p)
+  return(-p/a-m1)
+}
 ~~~
 {: .language-r}
  
  Con el siguiente comando se obtiene el valor numérico para $ \widehat{p} $ una vez que $ m_{2} $ es conocido.
  
 ~~~
-> uniroot(fun, c(0.01, 0.9))$root
+uniroot(fun, c(0.01, 0.9))$root
 ~~~
 {: .language-r}
 
@@ -152,15 +152,15 @@ Ver el archivo `Distribución.Logarítmica.r`. En este archivo también se progr
 Se generan tot valores de la variable aleatoria:
 
 ~~~
-> tot <- 50000
-> u <- matrix(0.35, tot, 1)
-> z <- sapply(u, sim)
+tot <- 50000
+u <- matrix(0.35, tot, 1)
+z <- sapply(u, sim)
 ~~~
 {: .language-r}
 
 Se utilizan los valores generados para estimar el parámetro p:
 
 ~~~
-> print(uniroot(fun, c(0.01, 0.99), mean(z))$root)
+print(uniroot(fun, c(0.01, 0.99), mean(z))$root)
 ~~~
 {: .language-r}
