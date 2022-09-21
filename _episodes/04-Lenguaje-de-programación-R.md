@@ -569,3 +569,6 @@ Por la ley de los grandes números, cuando el tama ̃no de la muestra se increme
 
 ![Forking Repositories]({{ page.root }}/fig/LeyGrandesNum.png)
 
+## Teorema del Límite Central
+
+
