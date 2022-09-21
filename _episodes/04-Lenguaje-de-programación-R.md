@@ -549,7 +549,7 @@ Se puede obtener más información sobre las distribuciones de probabilidad en e
 
 El archivo `Histograma.Normal.r` contiene los comandos necesarios para generar la siguiente figura.
 
-<img src="https://raw.githubusercontent.com/Czirion/estadistica-R/gh-pages/fig/Histograma1.png">
+![Forking Repositories]({{ page.root }}/fig/Histograma1.png)
 
 En particular, el comando `hist(x)` genera el histograma de los datos $ n $ en el vector $ x $ .
 ~~~
@@ -566,4 +566,6 @@ En particular, el comando `hist(x)` genera el histograma de los datos $ n $ en e
 ## Ley de los Grandes Números
 En el histograma anterior, el tamaño de la muestra fue de 1500.
 Por la ley de los grandes números, cuando el tama ̃no de la muestra se incrementa, entonces el histograma tiende a coincidir con más exactitud con la función de densidad de la que se tomó la muestra.
+
+![Forking Repositories]({{ page.root }}/fig/LeyGrandesNum.png)
 
