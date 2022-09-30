@@ -77,7 +77,8 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 ~~~
 {: .language-r}
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph1.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph1.png" width="400" />
 
 ### Recta estimada
 
@@ -108,11 +109,12 @@ Coefficients:
 {: .output}
 
 ~~~
-> abline(A) # añade la recta de regresi´on al diagrama de dispersi´on
+> abline(A) # añade la recta de regresión al diagrama de dispersión
 ~~~
 {: .language-r}
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph2.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph2.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph2.png" width="400" />
 
 
 ~~~
@@ -120,7 +122,8 @@ Coefficients:
 ~~~
 {: .language-r}
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph3.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph3.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph3.png" width="400" />
 
 ### Estadísticos del modelo
 
@@ -171,14 +174,16 @@ El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los dat
 ~~~
 {: .language-r}
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph4.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph4.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph4.png" width="400" />
 
 ~~~
 > qqline(Y-Y1)
 ~~~
 {: .language-r}
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph5.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph5.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph5.png" width="400" />
 
 ## Estructura de datos
 
@@ -224,7 +229,8 @@ Con el comando fix(datos) se pueden hacer modificaciones a este marco de datos
 ~~~
 {: .language-r}
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph6.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph6.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph6.png" width="400" />
 
 ~~~
 > lm(datos$resp∼datos$x+datos$y)
@@ -319,6 +325,7 @@ $$ y = \beta_{0} + \beta_{1} u + \beta_{2} u^{2} + \cdots + \beta_{p} u^{p} + \e
 
 se usa el comando `>lm(y ∼ poly(u, p, raw=TRUE))` , en donde $ p $ es el grado del polinomio que queresmo ajustar.
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph8.png)
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph8.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph8.png" width="400" />
 
 Ver el archivo `Regresión.Polinomial.r`
