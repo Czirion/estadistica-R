@@ -292,8 +292,8 @@ Ver el archivo `Regresión.Modelo.Reducido.r`
 
 Considere el modelo $ y = \beta_{0} + \beta_{1} u+ \beta_{2} v + \epsilon $, en donde la variable $ v $ solamente puede tomar los valores 0 o 1. En la gráfica los valores de $ y $ que se obtienen cuando $ v = 0 $, aparecen en negro y los mismos valores cuando $ v = 1 $, aparecen en rojo. Es interesante la prueba de hipótesis según la cual dos interceptan (cuando $ v = 0 $ y $ v = 1 $) son iguales 
 
-![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph7.png)
-<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph7.png" width="200" />
+<!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph7.png) -->
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph7.png" width="400" />
 
 Ver el archivo `Variables.Indicadores.r`
 
