@@ -230,7 +230,7 @@ Con el comando fix(datos) se pueden hacer modificaciones a este marco de datos
 {: .language-r}
 
 <!-- ![Forking Repositories]({{ page.root }}/fig/regresion_lineal_graph6.png) -->
-<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph6.png" width="400" />
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph6.png" width="500" />
 
 ~~~
 > lm(datos$resp∼datos$x+datos$y)
