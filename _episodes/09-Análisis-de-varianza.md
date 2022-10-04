@@ -21,7 +21,7 @@ En el ANOVA se tienen datos de la forma
 
 $$ X_{ij} = \mu_{i} + \epsilon_{ij} $$
 
-en donde \epsilon_{ij} son las desviaciones (o errores) aleatorios que la j-ésima observación respecto de la i-ésima media poblacional \mu_{i}. Se supone que los errores \epsilon_{ij} son independientes con media cero y desviación estándar constante.
+en donde $\epsilon_{ij}$ son las desviaciones (o errores) aleatorios que la j-ésima observación respecto de la i-ésima media poblacional $\mu_{i}$. Se supone que los errores $\epsilon_{ij}$ son independientes con media cero y desviación estándar constante.
 
 Si $ H_{0} $ se cumple, entonces el estadístico de prueba $ F_{cal} = CMTr/CME $ tiene un valor de 1. Valores grandes de $ F_{cal} $ sugieren que $ H_{0} $ es falsa. ¿Qué tan grande debe ser $ F_{cal} $ para poder rechazar a $ H_{0} $?
 
