@@ -128,6 +128,38 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 Ver el archivo `ANOVA.Acumulador.r`
 
+### Regresión logística
+Con los siguientes comandos se simula una muestra en donde la variable repuesta solamente toma los valores 0 o 1.
+
+~~~
+>tt <- 50 # tama˜no de la muestra
+>x <- 20+c(1:tt)∗50/tt
+>b0 <- -10
+>b1 <- 0.2
+>y <- c()
+>for (i in 1:tt) {
+  EXP <- exp(b0+b1∗x[i])
+  p <- EXP/(1 + EXP)
+  y[i] <- rbinom(1, size=1, prob=p)
+}
+>plot(x, y)
+~~~
+{: .language-r}
+
+
+Ver el archivo `Regresión.Logística.r`
+
+
+Una vez dada la muestra que se generó en al página anterior, los coeficientes del modelo se estiman con el siguiente comando
+
+~~~
+>fit <- glm(y ∼ x, family=“binomial”)
+>summary(fit)
+~~~
+{: .language-r}
+
+En la figura se reporta la muestra generada junto con el modelo ajustado (en linea roja punteada). El modelo provee la probabilidad de que un punto de la muestra haya tomado el valor 1. Cuando esta probabilidad es muy pqeueña, entonces la variable respuesta tenderá a asumir el valor 0. 
+
 
 
 
