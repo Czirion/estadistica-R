@@ -61,7 +61,7 @@ En la figura de la izquierda se reportan los diagramas de caja de las tres pobla
 
 En la figura de la derecha se reportan los intervalos "estudentizados" mediante el procedimiento de Tukey.
 
-<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_4.jpg" width="400" />
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_6.jpg" width="400" />
 
 En estos diagramas de caja se muestra el consumo de personal de energía eléctrina por bimestre.
 
@@ -69,7 +69,7 @@ tabla
 
 Para la hipótesis nula según la cual no hay diferencias en el consumo, se tiene un p-valor de 0.0126. Por lo tanto se rechaza esta hipótesis. En la figura, los intervalos estudentizados de Tukey. 
 
-<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_5.jpg" width="400" />
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_4.jpg" width="400" />
 
 Se observa la mayor diferencia entre los bimestres junio - julio contra febrero - marzo. 
 
@@ -93,6 +93,8 @@ E(Y) =
 $$
 
 Cuando se varían los valores $ \beta_{0} $, $ \beta_{1} $, $ \beta_{2} $ se cambian los niveles del factor.
+
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_5.jpg" width="400" />
 
 ### ANOVA con dos factores
 Un acumulador de energía eléctrica se puede construir de tres tipo distintos de materiales (factor 1 con tres niveles) y trabajará a distintas temperaturas (factor 2). Es de interés el número de horas de servicio del acumulador. El acumulador será probado a tres temperaturas distintas (los tres niveles del factor 2). En la tabla se reportan las horas de servicio obtenidas al aplicar cada tratamiento (combinación de niveles de los factores) a 4 acumuladores elegidos de forma aleatoria
