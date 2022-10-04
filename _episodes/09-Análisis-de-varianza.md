@@ -13,7 +13,7 @@ keypoints:
 ## Análisis de Varianza
 En 1919, la Estación Rothamsted contrató al joven estadístico Ronals Aylmer Fisher para que aprovecara los datos ahí acumulados. El análisis de Fisher sugería que la relación entre la lluvia y el crecimiento de las plantas era más significativa que la relación entre el fertilizante y el crecimiento de las plantas. A los científicos de la estación de Rothamsted, no les interesaba la lluvia como factor determinante de la cosecha, sino el fertilizante. No se sabía separar los efectos d ela lluvia d elso efectos del fertilizante. Fisher comprendió que los efectos se podían seprar si los experimentos se diseñaban de manera apropiada. 
 
-<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_0.jpg" width="300" /> <img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_1.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_01.png" width="700" /> 
 
 
 El análisis de varianza (ANOVA) de un sólo factor se utiliza para comparar las medias I poblaciones. Es de interés la hipótesis
@@ -55,7 +55,7 @@ F = 1.6901, num df = 2, denom df =
 
 En la figura de la izquierda se reportan los diagramas de caja de las tres poblacionse generadas por el código anterior. Dentro de cada caja yacen las observaciones entre loso cuartiles $ Q_{1} $ y $ Q_{3} $ de cada población. Los "bigotes" se extienden hasta los valores máximo de la serie o hasta $ 1.5 x (Q_{3} - Q{1}) $.
 
-<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_2.jpg" width="350" /> <img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_3.jpg" width="350" />
+<img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/analisis_varianza_34.png" width="700" />
 
 En la figura de la derecha se reportan los intervalos "estudentizados" mediante el procedimiento de Tukey.
 
