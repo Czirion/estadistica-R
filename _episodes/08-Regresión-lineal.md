@@ -67,13 +67,13 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 ### Diagrama de dispersión
 
 ~~~
-> recta <- function(x) 1 + 5*x  #Defina una función lineal "recta(x)"
-> set.seed(415)
-> x <- c(1:10)
-> y <- recta(x) + rnorm(10, 0, 5)
-> dev.new(width=6, height=5)
-> par(cex=1.5)
-> plot(x, y)  #Para obtener el diagrama de dispresión
+recta <- function(x) 1 + 5*x  #Defina una función lineal "recta(x)"
+set.seed(415)
+x <- c(1:10)
+y <- recta(x) + rnorm(10, 0, 5)
+dev.new(width=6, height=5)
+par(cex=1.5)
+plot(x, y)  #Para obtener el diagrama de dispresión
 ~~~
 {: .language-r}
 
@@ -83,7 +83,7 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 ### Recta estimada
 
 ~~~
-> cor(x, y) # calcula la correlación entre x, y
+cor(x, y) # calcula la correlación entre x, y
 ~~~
 {: .language-r}
 
@@ -93,8 +93,8 @@ En estadística, la regresión hacia la media es el fenómeno en el que si una v
 {: .output}
 
 ~~~
-> A <- lm(y ∼ x) # asigna a A el modelo estimado y=b+m∗x
-> print(A) # despliega los coeficientes calculados para el modelo
+A <- lm(y ∼ x) # asigna a A el modelo estimado y=b+m∗x
+print(A) # despliega los coeficientes calculados para el modelo
 ~~~
 {: .language-r}
 
@@ -109,7 +109,7 @@ Coefficients:
 {: .output}
 
 ~~~
-> abline(A) # añade la recta de regresión al diagrama de dispersión
+abline(A) # añade la recta de regresión al diagrama de dispersión
 ~~~
 {: .language-r}
 
@@ -118,7 +118,7 @@ Coefficients:
 
 
 ~~~
-> plot(A, which=1, add.smooth=FALSE) # grafica los residuales
+plot(A, which=1, add.smooth=FALSE) # grafica los residuales
 ~~~
 {: .language-r}
 
@@ -128,7 +128,7 @@ Coefficients:
 ### Estadísticos del modelo
 
 ~~~
-> summary(A) # para obtener el resumen del modelo
+summary(A) # para obtener el resumen del modelo
 ~~~
 {: .language-r}
 
@@ -164,13 +164,13 @@ El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los dat
 ## Gráfica de los residuales
 
 ~~~
-> set.seed(405)
-> x <- seq(from=0.1, to=10, by=0.1)
-> Y <- recta(x)+rnorm(length(x), 0, 5)
-> A <- lm(Y ∼ x)
-> modelo <- function(x) -0.3041+5.2817∗x
-> Y1 <- modelo(x)
-> qqnorm(Y-Y1, pch="o")
+set.seed(405)
+x <- seq(from=0.1, to=10, by=0.1)
+Y <- recta(x)+rnorm(length(x), 0, 5)
+A <- lm(Y ∼ x)
+modelo <- function(x) -0.3041+5.2817∗x
+Y1 <- modelo(x)
+qqnorm(Y-Y1, pch="o")
 ~~~
 {: .language-r}
 
@@ -178,7 +178,7 @@ El estadístico $R^{2}$ nos dice cuál es el porcentaje de variación de los dat
 <img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph4.png" width="400" />
 
 ~~~
-> qqline(Y-Y1)
+qqline(Y-Y1)
 ~~~
 {: .language-r}
 
@@ -219,13 +219,13 @@ Con el comando fix(datos) se pueden hacer modificaciones a este marco de datos
 ## Regresión Lineal Multiple
 
 ~~~
-> set.seed(777)
-> f <- function(x, y) 3∗x-5∗y+1
-> x <- runif(20, 0, 10)
-> y <- runif(20, 0, 10)
-> resp <- f(x, y) + rnorm(20, 0, 3)
-> datos <- data.frame(x, y, resp)
-> plot(datos, cex=1.5, cex.axis=2) # genera la gr´afica: >lm(datos$resp∼datos$x+datos$y)
+set.seed(777)
+f <- function(x, y) 3∗x-5∗y+1
+x <- runif(20, 0, 10)
+y <- runif(20, 0, 10)
+resp <- f(x, y) + rnorm(20, 0, 3)
+datos <- data.frame(x, y, resp)
+plot(datos, cex=1.5, cex.axis=2) # genera la gr´afica: >lm(datos$resp∼datos$x+datos$y)
 ~~~
 {: .language-r}
 
@@ -233,7 +233,7 @@ Con el comando fix(datos) se pueden hacer modificaciones a este marco de datos
 <img src="https://raw.githubusercontent.com/czirion/estadistica-R/master/fig/regresion_lineal_graph6.png" width="500" />
 
 ~~~
-> lm(datos$resp∼datos$x+datos$y)
+lm(datos$resp∼datos$x+datos$y)
 ~~~
 {: .language-r}
 
@@ -286,8 +286,8 @@ Ver el archivo `Regresión.Términos.Cruzados.r`
 Con los dos comandos que siguen, es posible seleccionar el mejor conjunto de variables explicativas.
 
 ~~~
-> full.model <- lm(y ∼ u + v + w + z)
-> reduced.model <- step(full.model, direction="backward")
+full.model <- lm(y ∼ u + v + w + z)
+reduced.model <- step(full.model, direction="backward")
 ~~~
 {: .language-r}
 
