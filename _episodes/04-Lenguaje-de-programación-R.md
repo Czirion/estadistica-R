@@ -571,4 +571,8 @@ Por la ley de los grandes números, cuando el tama ̃no de la muestra se increme
 
 ## Teorema del Límite Central
 
+"As a rule of thumb, the sample size must be at least 30 for the central limit theorem to hold true". Charles Wheela
 
+"I know of scarcely anything so apt to impress the imagination as the wonderful form of cosmic order expressed by the law of frequency of error. The law would have been personified by the Greeks if they had known of it". Francis Galton
+
+![Forking Repositories]({{ page.root }}/fig/TLimCentral.png)
