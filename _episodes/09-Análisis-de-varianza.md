@@ -29,18 +29,18 @@ en donde $\epsilon_{ij}$ son las desviaciones (o errores) aleatorios que la j-é
 Si $ H_{0} $ se cumple, entonces el estadístico de prueba $ F_{cal} = CMTr/CME $ tiene un valor de 1. Valores grandes de $ F_{cal} $ sugieren que $ H_{0} $ es falsa. ¿Qué tan grande debe ser $ F_{cal} $ para poder rechazar a $ H_{0} $?
 
 ~~~
-> set.seed(777)
-> a <- 1.0 + rnorm(10, 0, 0.7)
-> b <- 1.5 + rnorm(10, 0, 0.7)
-> c <- 2.0 + rnorm(10, 0, 0.7)
-> obs <- c(a, b, c)
-> A <- rep("A", 10)
-> B <- rep("B", 10)
-> C <- rep("C", 10)
-> fac <- factor(c(A, B, C))
-> datos <- data.frame(obs, fac)
-> mod <- oneway.test(obs ∼ fac, data=datos, var.equal=TRUE)
-> print(mod) # se obtiene como resultado lo siguiente:
+set.seed(777)
+a <- 1.0 + rnorm(10, 0, 0.7)
+b <- 1.5 + rnorm(10, 0, 0.7)
+c <- 2.0 + rnorm(10, 0, 0.7)
+obs <- c(a, b, c)
+A <- rep("A", 10)
+B <- rep("B", 10)
+C <- rep("C", 10)
+fac <- factor(c(A, B, C))
+datos <- data.frame(obs, fac)
+mod <- oneway.test(obs ∼ fac, data=datos, var.equal=TRUE)
+print(mod) # se obtiene como resultado lo siguiente:
 ~~~
 {: .language-r}
 
@@ -106,12 +106,12 @@ Un acumulador de energía eléctrica se puede construir de tres tipo distintos d
 Con los siguientes comandos se realiza el análisis de varianza con dos factores para el problema planteado anteriormente.
 
 ~~~
-> vida <- c(130, 74, 150, 159, 138, 168, 155, 180, 188, 126, 110, 160, 34, 80, 135, 106, 174, 150, 40, 75, 122, 115, 120, 139, 20, 82, 25, 58, 96, 82, 70, 58, 70, 45, 104, 60)
-> material <- rep(c(1,1,2,2,3,3), 6)
-> temp <- rep(c(15, 70, 125), each=12)
-> dat <- data.frame(resp=vida, tipo=factor(material), temperatura=factor(temp))
-> fit <- aov(resp ∼ tipo∗temperatura, data=dat)
-> summary(fit)
+vida <- c(130, 74, 150, 159, 138, 168, 155, 180, 188, 126, 110, 160, 34, 80, 135, 106, 174, 150, 40, 75, 122, 115, 120, 139, 20, 82, 25, 58, 96, 82, 70, 58, 70, 45, 104, 60)
+material <- rep(c(1,1,2,2,3,3), 6)
+temp <- rep(c(15, 70, 125), each=12)
+dat <- data.frame(resp=vida, tipo=factor(material), temperatura=factor(temp))
+fit <- aov(resp ∼ tipo∗temperatura, data=dat)
+summary(fit)
 ~~~
 {: .language-r}
 
@@ -132,17 +132,17 @@ Ver el archivo `ANOVA.Acumulador.r`
 Con los siguientes comandos se simula una muestra en donde la variable repuesta solamente toma los valores 0 o 1.
 
 ~~~
->tt <- 50 # tama˜no de la muestra
->x <- 20+c(1:tt)∗50/tt
->b0 <- -10
->b1 <- 0.2
->y <- c()
->for (i in 1:tt) {
+tt <- 50 # tama˜no de la muestra
+x <- 20+c(1:tt)∗50/tt
+b0 <- -10
+b1 <- 0.2
+y <- c()
+for (i in 1:tt) {
   EXP <- exp(b0+b1∗x[i])
   p <- EXP/(1 + EXP)
   y[i] <- rbinom(1, size=1, prob=p)
 }
->plot(x, y)
+plot(x, y)
 ~~~
 {: .language-r}
 
@@ -153,13 +153,9 @@ Ver el archivo `Regresión.Logística.r`
 Una vez dada la muestra que se generó en al página anterior, los coeficientes del modelo se estiman con el siguiente comando
 
 ~~~
->fit <- glm(y ∼ x, family=“binomial”)
->summary(fit)
+fit <- glm(y ∼ x, family=“binomial”)
+summary(fit)
 ~~~
 {: .language-r}
 
 En la figura se reporta la muestra generada junto con el modelo ajustado (en linea roja punteada). El modelo provee la probabilidad de que un punto de la muestra haya tomado el valor 1. Cuando esta probabilidad es muy pqeueña, entonces la variable respuesta tenderá a asumir el valor 0. 
-
-
-
-
