@@ -74,7 +74,7 @@ es decir, ninguna teoría es absolutamente verdadera, sino a lo sumo se mantiene
  
 ![Forking Repositories]({{ page.root }}/fig/karlpopper.png)
   
-### Prueba de hipótesis para la diferencia de medias.
+## Prueba de hipótesis para la diferencia de medias.
 
 Suponga que tenemos dos poblaciones:
 
